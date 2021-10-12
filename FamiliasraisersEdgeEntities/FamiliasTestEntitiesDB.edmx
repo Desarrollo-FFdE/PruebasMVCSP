@@ -1,0 +1,1447 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="FamiliasTestModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityContainer Name="FamiliasTestModelStoreContainer">
+          <EntitySet Name="CdCountry" EntityType="FamiliasTestModel.Store.CdCountry" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="CdGender" EntityType="FamiliasTestModel.Store.CdGender" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="CdSponsorMemberRelationInactiveReason" EntityType="FamiliasTestModel.Store.CdSponsorMemberRelationInactiveReason" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="CdSponsorMemberRelationType" EntityType="FamiliasTestModel.Store.CdSponsorMemberRelationType" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="CdSponsorshipLevel" EntityType="FamiliasTestModel.Store.CdSponsorshipLevel" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="CdSponsorshipRestriction" EntityType="FamiliasTestModel.Store.CdSponsorshipRestriction" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="CdStateOrProvince" EntityType="FamiliasTestModel.Store.CdStateOrProvince" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Member" EntityType="FamiliasTestModel.Store.Member" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="MiscMemberSponsorInfo" EntityType="FamiliasTestModel.Store.MiscMemberSponsorInfo" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Sponsor" EntityType="FamiliasTestModel.Store.Sponsor" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="SponsorMemberRelation" EntityType="FamiliasTestModel.Store.SponsorMemberRelation" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="v_AMBF_CondicionesVivienda" EntityType="FamiliasTestModel.Store.v_AMBF_CondicionesVivienda" store:Type="Views" store:Schema="dbo" store:Name="v_AMBF_CondicionesVivienda">
+            <DefiningQuery>SELECT 
+      [v_AMBF_CondicionesVivienda].[Sitio] AS [Sitio], 
+      [v_AMBF_CondicionesVivienda].[Familia] AS [Familia], 
+      [v_AMBF_CondicionesVivienda].[Clasificación] AS [Clasificación], 
+      [v_AMBF_CondicionesVivienda].[TS] AS [TS], 
+      [v_AMBF_CondicionesVivienda].[Pueblo] AS [Pueblo], 
+      [v_AMBF_CondicionesVivienda].[Tenencia] AS [Tenencia], 
+      [v_AMBF_CondicionesVivienda].[Tamaño] AS [Tamaño], 
+      [v_AMBF_CondicionesVivienda].[Cuartos] AS [Cuartos], 
+      [v_AMBF_CondicionesVivienda].[Paredes] AS [Paredes], 
+      [v_AMBF_CondicionesVivienda].[Paredes_Calidad] AS [Paredes_Calidad], 
+      [v_AMBF_CondicionesVivienda].[Paredes_Notas] AS [Paredes_Notas], 
+      [v_AMBF_CondicionesVivienda].[Techo] AS [Techo], 
+      [v_AMBF_CondicionesVivienda].[Techo_Calidad] AS [Techo_Calidad], 
+      [v_AMBF_CondicionesVivienda].[Techo_Notas] AS [Techo_Notas], 
+      [v_AMBF_CondicionesVivienda].[Piso] AS [Piso], 
+      [v_AMBF_CondicionesVivienda].[Piso_Calidad] AS [Piso_Calidad], 
+      [v_AMBF_CondicionesVivienda].[Piso_Notas] AS [Piso_Notas], 
+      [v_AMBF_CondicionesVivienda].[Cocina] AS [Cocina], 
+      [v_AMBF_CondicionesVivienda].[Cocina_Calidad] AS [Cocina_Calidad], 
+      [v_AMBF_CondicionesVivienda].[Cocina_Notas] AS [Cocina_Notas], 
+      [v_AMBF_CondicionesVivienda].[Agua] AS [Agua], 
+      [v_AMBF_CondicionesVivienda].[Electricidad] AS [Electricidad], 
+      [v_AMBF_CondicionesVivienda].[Baño] AS [Baño], 
+      [v_AMBF_CondicionesVivienda].[Drenaje] AS [Drenaje], 
+      [v_AMBF_CondicionesVivienda].[Higiene] AS [Higiene], 
+      [v_AMBF_CondicionesVivienda].[CocinaTecho] AS [CocinaTecho], 
+      [v_AMBF_CondicionesVivienda].[CocinaTecho_Calidad] AS [CocinaTecho_Calidad], 
+      [v_AMBF_CondicionesVivienda].[CocinaTecho_Notas] AS [CocinaTecho_Notas], 
+      [v_AMBF_CondicionesVivienda].[pCultivar] AS [pCultivar], 
+      [v_AMBF_CondicionesVivienda].[Estufa] AS [Estufa]
+      FROM [dbo].[v_AMBF_CondicionesVivienda] AS [v_AMBF_CondicionesVivienda]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="v_GEN_Apadrinados" EntityType="FamiliasTestModel.Store.v_GEN_Apadrinados" store:Type="Views" store:Schema="dbo" store:Name="v_GEN_Apadrinados">
+            <DefiningQuery>SELECT 
+      [v_GEN_Apadrinados].[Project] AS [Project], 
+      [v_GEN_Apadrinados].[Sitio] AS [Sitio], 
+      [v_GEN_Apadrinados].[TipoAfil] AS [TipoAfil], 
+      [v_GEN_Apadrinados].[No_Afiliación] AS [No_Afiliación], 
+      [v_GEN_Apadrinados].[Apellidos] AS [Apellidos], 
+      [v_GEN_Apadrinados].[Nombres] AS [Nombres], 
+      [v_GEN_Apadrinados].[Genero] AS [Genero], 
+      [v_GEN_Apadrinados].[Nacimiento] AS [Nacimiento], 
+      [v_GEN_Apadrinados].[Edad] AS [Edad], 
+      [v_GEN_Apadrinados].[Año] AS [Año], 
+      [v_GEN_Apadrinados].[Grado] AS [Grado], 
+      [v_GEN_Apadrinados].[Estado_Educ] AS [Estado_Educ], 
+      [v_GEN_Apadrinados].[Fecha_Estado] AS [Fecha_Estado], 
+      [v_GEN_Apadrinados].[ExcepcionEstadoEduc] AS [ExcepcionEstadoEduc], 
+      [v_GEN_Apadrinados].[Sección] AS [Sección], 
+      [v_GEN_Apadrinados].[Maestro] AS [Maestro], 
+      [v_GEN_Apadrinados].[Nivel_Educ] AS [Nivel_Educ], 
+      [v_GEN_Apadrinados].[Escuela] AS [Escuela], 
+      [v_GEN_Apadrinados].[Semaforo] AS [Semaforo], 
+      [v_GEN_Apadrinados].[Fase] AS [Fase], 
+      [v_GEN_Apadrinados].[Razón] AS [Razón], 
+      [v_GEN_Apadrinados].[FechaEstadoFase] AS [FechaEstadoFase], 
+      [v_GEN_Apadrinados].[Padrinos] AS [Padrinos], 
+      [v_GEN_Apadrinados].[NivelApadrinamiento] AS [NivelApadrinamiento], 
+      [v_GEN_Apadrinados].[Familia] AS [Familia], 
+      [v_GEN_Apadrinados].[TS] AS [TS], 
+      [v_GEN_Apadrinados].[Región] AS [Región], 
+      [v_GEN_Apadrinados].[Madre] AS [Madre], 
+      [v_GEN_Apadrinados].[Padre] AS [Padre], 
+      [v_GEN_Apadrinados].[Dirección] AS [Dirección], 
+      [v_GEN_Apadrinados].[Pueblo] AS [Pueblo], 
+      [v_GEN_Apadrinados].[Area] AS [Area], 
+      [v_GEN_Apadrinados].[Telefonos] AS [Telefonos], 
+      [v_GEN_Apadrinados].[Clasificación] AS [Clasificación], 
+      [v_GEN_Apadrinados].[ProximaClasificacion] AS [ProximaClasificacion], 
+      [v_GEN_Apadrinados].[Carrera] AS [Carrera], 
+      [v_GEN_Apadrinados].[FechaAfiliacion] AS [FechaAfiliacion], 
+      [v_GEN_Apadrinados].[Restricción] AS [Restricción], 
+      [v_GEN_Apadrinados].[PuebloEscuela] AS [PuebloEscuela], 
+      [v_GEN_Apadrinados].[Ingresos] AS [Ingresos], 
+      [v_GEN_Apadrinados].[SchoolType] AS [SchoolType]
+      FROM [dbo].[v_GEN_Apadrinados] AS [v_GEN_Apadrinados]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="v_GEN_FamiliasAfiliadas" EntityType="FamiliasTestModel.Store.v_GEN_FamiliasAfiliadas" store:Type="Views" store:Schema="dbo" store:Name="v_GEN_FamiliasAfiliadas">
+            <DefiningQuery>SELECT 
+      [v_GEN_FamiliasAfiliadas].[Sitio] AS [Sitio], 
+      [v_GEN_FamiliasAfiliadas].[Familia] AS [Familia], 
+      [v_GEN_FamiliasAfiliadas].[Dirección] AS [Dirección], 
+      [v_GEN_FamiliasAfiliadas].[Area] AS [Area], 
+      [v_GEN_FamiliasAfiliadas].[Pueblo] AS [Pueblo], 
+      [v_GEN_FamiliasAfiliadas].[Región] AS [Región], 
+      [v_GEN_FamiliasAfiliadas].[Madre] AS [Madre], 
+      [v_GEN_FamiliasAfiliadas].[Padre] AS [Padre], 
+      [v_GEN_FamiliasAfiliadas].[TS] AS [TS], 
+      [v_GEN_FamiliasAfiliadas].[UltimaActualización] AS [UltimaActualización], 
+      [v_GEN_FamiliasAfiliadas].[Clasificacion] AS [Clasificacion], 
+      [v_GEN_FamiliasAfiliadas].[FechaClasificación] AS [FechaClasificación], 
+      [v_GEN_FamiliasAfiliadas].[Apadrinados] AS [Apadrinados], 
+      [v_GEN_FamiliasAfiliadas].[Afiliados] AS [Afiliados], 
+      [v_GEN_FamiliasAfiliadas].[DesafiliadosGraduados] AS [DesafiliadosGraduados], 
+      [v_GEN_FamiliasAfiliadas].[FechaAfiliación] AS [FechaAfiliación], 
+      [v_GEN_FamiliasAfiliadas].[Telefonos] AS [Telefonos], 
+      [v_GEN_FamiliasAfiliadas].[Ingresos] AS [Ingresos], 
+      [v_GEN_FamiliasAfiliadas].[IngresosJefes] AS [IngresosJefes], 
+      [v_GEN_FamiliasAfiliadas].[Family] AS [Family]
+      FROM [dbo].[v_GEN_FamiliasAfiliadas] AS [v_GEN_FamiliasAfiliadas]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="v_GEN_PoblaciónConDerechos" EntityType="FamiliasTestModel.Store.v_GEN_PoblaciónConDerechos" store:Type="Views" store:Schema="dbo" store:Name="v_GEN_PoblaciónConDerechos">
+            <DefiningQuery>SELECT 
+      [v_GEN_PoblaciónConDerechos].[Sitio] AS [Sitio], 
+      [v_GEN_PoblaciónConDerechos].[Miembro] AS [Miembro], 
+      [v_GEN_PoblaciónConDerechos].[Apellidos] AS [Apellidos], 
+      [v_GEN_PoblaciónConDerechos].[Nombres] AS [Nombres], 
+      [v_GEN_PoblaciónConDerechos].[Genero] AS [Genero], 
+      [v_GEN_PoblaciónConDerechos].[Nacimiento] AS [Nacimiento], 
+      [v_GEN_PoblaciónConDerechos].[Edad] AS [Edad], 
+      [v_GEN_PoblaciónConDerechos].[RelaciónFamiliar] AS [RelaciónFamiliar], 
+      [v_GEN_PoblaciónConDerechos].[Familia] AS [Familia], 
+      [v_GEN_PoblaciónConDerechos].[Clasificación] AS [Clasificación], 
+      [v_GEN_PoblaciónConDerechos].[FechaClasificación] AS [FechaClasificación], 
+      [v_GEN_PoblaciónConDerechos].[EstadoFamiliar] AS [EstadoFamiliar], 
+      [v_GEN_PoblaciónConDerechos].[Etnia] AS [Etnia], 
+      [v_GEN_PoblaciónConDerechos].[Pueblo] AS [Pueblo], 
+      [v_GEN_PoblaciónConDerechos].[TS] AS [TS], 
+      [v_GEN_PoblaciónConDerechos].[Región] AS [Región], 
+      [v_GEN_PoblaciónConDerechos].[Teléfono] AS [Teléfono], 
+      [v_GEN_PoblaciónConDerechos].[descSitio] AS [descSitio], 
+      [v_GEN_PoblaciónConDerechos].[TipoMiembro] AS [TipoMiembro], 
+      [v_GEN_PoblaciónConDerechos].[GradoAcadémico] AS [GradoAcadémico]
+      FROM [dbo].[v_GEN_PoblaciónConDerechos] AS [v_GEN_PoblaciónConDerechos]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="v_GEN_PoblacionPorSitio" EntityType="FamiliasTestModel.Store.v_GEN_PoblacionPorSitio" store:Type="Views" store:Schema="dbo" store:Name="v_GEN_PoblacionPorSitio">
+            <DefiningQuery>SELECT 
+      [v_GEN_PoblacionPorSitio].[Sitio] AS [Sitio], 
+      [v_GEN_PoblacionPorSitio].[Total] AS [Total]
+      FROM [dbo].[v_GEN_PoblacionPorSitio] AS [v_GEN_PoblacionPorSitio]</DefiningQuery>
+          </EntitySet>
+          <AssociationSet Name="FK_Member_CdGender" Association="FamiliasTestModel.Store.FK_Member_CdGender">
+            <End Role="CdGender" EntitySet="CdGender" />
+            <End Role="Member" EntitySet="Member" />
+          </AssociationSet>
+          <AssociationSet Name="FK_MiscMemberSponsorInfo_CdSponsorMemberRelationType" Association="FamiliasTestModel.Store.FK_MiscMemberSponsorInfo_CdSponsorMemberRelationType">
+            <End Role="CdSponsorMemberRelationType" EntitySet="CdSponsorMemberRelationType" />
+            <End Role="MiscMemberSponsorInfo" EntitySet="MiscMemberSponsorInfo" />
+          </AssociationSet>
+          <AssociationSet Name="FK_MiscMemberSponsorInfo_CdSponsorshipLevel" Association="FamiliasTestModel.Store.FK_MiscMemberSponsorInfo_CdSponsorshipLevel">
+            <End Role="CdSponsorshipLevel" EntitySet="CdSponsorshipLevel" />
+            <End Role="MiscMemberSponsorInfo" EntitySet="MiscMemberSponsorInfo" />
+          </AssociationSet>
+          <AssociationSet Name="FK_MiscMemberSponsorInfo_CdSponsorshipRestriction" Association="FamiliasTestModel.Store.FK_MiscMemberSponsorInfo_CdSponsorshipRestriction">
+            <End Role="CdSponsorshipRestriction" EntitySet="CdSponsorshipRestriction" />
+            <End Role="MiscMemberSponsorInfo" EntitySet="MiscMemberSponsorInfo" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Sponsor_CdCountry" Association="FamiliasTestModel.Store.FK_Sponsor_CdCountry">
+            <End Role="CdCountry" EntitySet="CdCountry" />
+            <End Role="Sponsor" EntitySet="Sponsor" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Sponsor_CdGender" Association="FamiliasTestModel.Store.FK_Sponsor_CdGender">
+            <End Role="CdGender" EntitySet="CdGender" />
+            <End Role="Sponsor" EntitySet="Sponsor" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Sponsor_CdStateOrProvince" Association="FamiliasTestModel.Store.FK_Sponsor_CdStateOrProvince">
+            <End Role="CdStateOrProvince" EntitySet="CdStateOrProvince" />
+            <End Role="Sponsor" EntitySet="Sponsor" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SponsorMemberRelation_CdSponsorMemberRelationInactiveReason" Association="FamiliasTestModel.Store.FK_SponsorMemberRelation_CdSponsorMemberRelationInactiveReason">
+            <End Role="CdSponsorMemberRelationInactiveReason" EntitySet="CdSponsorMemberRelationInactiveReason" />
+            <End Role="SponsorMemberRelation" EntitySet="SponsorMemberRelation" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SponsorMemberRelation_CdSponsorMemberRelationType" Association="FamiliasTestModel.Store.FK_SponsorMemberRelation_CdSponsorMemberRelationType">
+            <End Role="CdSponsorMemberRelationType" EntitySet="CdSponsorMemberRelationType" />
+            <End Role="SponsorMemberRelation" EntitySet="SponsorMemberRelation" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="CdCountry">
+          <Key>
+            <PropertyRef Name="Code" />
+          </Key>
+          <Property Name="Code" Type="varchar" Nullable="false" MaxLength="2" />
+          <Property Name="DescEnglish" Type="varchar" Nullable="false" MaxLength="40" />
+          <Property Name="DescSpanish" Type="varchar" Nullable="false" MaxLength="40" />
+        </EntityType>
+        <EntityType Name="CdGender">
+          <Key>
+            <PropertyRef Name="Code" />
+          </Key>
+          <Property Name="Code" Type="varchar" Nullable="false" MaxLength="1" />
+          <Property Name="DescSpanish" Type="varchar" Nullable="false" MaxLength="40" />
+          <Property Name="DescEnglish" Type="varchar" Nullable="false" MaxLength="40" />
+        </EntityType>
+        <EntityType Name="CdSponsorMemberRelationInactiveReason">
+          <Key>
+            <PropertyRef Name="Code" />
+          </Key>
+          <Property Name="Code" Type="varchar" Nullable="false" MaxLength="4" />
+          <Property Name="DescSpanish" Type="varchar" Nullable="false" MaxLength="40" />
+          <Property Name="DescEnglish" Type="varchar" Nullable="false" MaxLength="40" />
+        </EntityType>
+        <EntityType Name="CdSponsorMemberRelationType">
+          <Key>
+            <PropertyRef Name="Code" />
+          </Key>
+          <Property Name="Code" Type="varchar" Nullable="false" MaxLength="4" />
+          <Property Name="DescEnglish" Type="varchar" Nullable="false" MaxLength="40" />
+          <Property Name="DescSpanish" Type="varchar" Nullable="false" MaxLength="40" />
+          <Property Name="SponsorshipLevelPoints" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="CdSponsorshipLevel">
+          <Key>
+            <PropertyRef Name="Code" />
+          </Key>
+          <Property Name="Code" Type="varchar" Nullable="false" MaxLength="4" />
+          <Property Name="DescEnglish" Type="varchar" Nullable="false" MaxLength="40" />
+          <Property Name="DescSpanish" Type="varchar" Nullable="false" MaxLength="40" />
+          <Property Name="SponsorshipLevelPoints" Type="int" />
+        </EntityType>
+        <EntityType Name="CdSponsorshipRestriction">
+          <Key>
+            <PropertyRef Name="Code" />
+          </Key>
+          <Property Name="Code" Type="varchar" Nullable="false" MaxLength="4" />
+          <Property Name="DescEnglish" Type="varchar" Nullable="false" MaxLength="40" />
+          <Property Name="DescSpanish" Type="varchar" Nullable="false" MaxLength="40" />
+        </EntityType>
+        <EntityType Name="CdStateOrProvince">
+          <Key>
+            <PropertyRef Name="Code" />
+          </Key>
+          <Property Name="Code" Type="varchar" Nullable="false" MaxLength="2" />
+          <Property Name="DescEnglish" Type="varchar" Nullable="false" MaxLength="40" />
+          <Property Name="DescSpanish" Type="varchar" Nullable="false" MaxLength="40" />
+          <Property Name="Country" Type="varchar" Nullable="false" MaxLength="2" />
+        </EntityType>
+        <EntityType Name="Member">
+          <Key>
+            <PropertyRef Name="Project" />
+            <PropertyRef Name="MemberId" />
+            <PropertyRef Name="CreationDateTime" />
+          </Key>
+          <Property Name="Project" Type="varchar" Nullable="false" MaxLength="1" />
+          <Property Name="MemberId" Type="int" Nullable="false" />
+          <Property Name="CreationDateTime" Type="datetime" Nullable="false" />
+          <Property Name="RecordStatus" Type="varchar" Nullable="false" MaxLength="1" />
+          <Property Name="UserId" Type="varchar" Nullable="false" MaxLength="20" />
+          <Property Name="ExpirationDateTime" Type="datetime" />
+          <Property Name="LastFamilyId" Type="int" />
+          <Property Name="FirstNames" Type="varchar" Nullable="false" MaxLength="40" />
+          <Property Name="LastNames" Type="varchar" MaxLength="40" />
+          <Property Name="PreferredName" Type="varchar" MaxLength="40" />
+          <Property Name="BirthDate" Type="datetime" />
+          <Property Name="Gender" Type="varchar" Nullable="false" MaxLength="1" />
+          <Property Name="AffiliationType" Type="varchar" MaxLength="4" />
+          <Property Name="AffiliationStatus" Type="varchar" MaxLength="4" />
+          <Property Name="AffiliationStatusDate" Type="datetime" />
+          <Property Name="LiveDead" Type="varchar" Nullable="false" MaxLength="1" />
+          <Property Name="DeathDate" Type="datetime" />
+          <Property Name="BiologicalMotherMemberId" Type="int" />
+          <Property Name="BiologicalFatherMemberId" Type="int" />
+          <Property Name="OtherAffiliation" Type="varchar" MaxLength="4" />
+          <Property Name="OfficialId" Type="varchar" MaxLength="20" />
+          <Property Name="HasFaithOfAgeOrOfficialId" Type="bit" Nullable="false" />
+          <Property Name="CellularPhoneNumber" Type="varchar" MaxLength="50" />
+          <Property Name="Literacy" Type="varchar" MaxLength="4" />
+          <Property Name="LastGradePassed" Type="varchar" MaxLength="4" />
+          <Property Name="HasHealthCard" Type="bit" />
+          <Property Name="ExceptionInAgePolicy" Type="varchar" MaxLength="4" />
+          <Property Name="LastGradePassedYear" Type="int" />
+          <Property Name="LastGradePassedStatus" Type="varchar" MaxLength="4" />
+        </EntityType>
+        <EntityType Name="MiscMemberSponsorInfo">
+          <Key>
+            <PropertyRef Name="Project" />
+            <PropertyRef Name="MemberId" />
+            <PropertyRef Name="CreationDateTime" />
+          </Key>
+          <Property Name="Project" Type="varchar" Nullable="false" MaxLength="1" />
+          <Property Name="MemberId" Type="int" Nullable="false" />
+          <Property Name="CreationDateTime" Type="datetime" Nullable="false" />
+          <Property Name="RecordStatus" Type="varchar" Nullable="false" MaxLength="1" />
+          <Property Name="UserId" Type="varchar" Nullable="false" MaxLength="20" />
+          <Property Name="ExpirationDateTime" Type="datetime" />
+          <Property Name="Photo" Type="varchar" MaxLength="80" />
+          <Property Name="PhotoDate" Type="datetime" />
+          <Property Name="RetakePhotoDate" Type="datetime" />
+          <Property Name="RetakePhotoUserId" Type="varchar" MaxLength="20" />
+          <Property Name="LastCarnetPrintDate" Type="datetime" />
+          <Property Name="SponsorshipLevel" Type="varchar" MaxLength="4" />
+          <Property Name="SponsorshipType" Type="varchar" MaxLength="4" />
+          <Property Name="Restriction" Type="varchar" MaxLength="4" />
+          <Property Name="RestrictionDate" Type="datetime" />
+          <Property Name="ExceptionPhotoDate" Type="datetime" />
+        </EntityType>
+        <EntityType Name="Sponsor">
+          <Key>
+            <PropertyRef Name="SponsorId" />
+            <PropertyRef Name="CreationDateTime" />
+          </Key>
+          <Property Name="SponsorId" Type="int" Nullable="false" />
+          <Property Name="CreationDateTime" Type="datetime" Nullable="false" />
+          <Property Name="RecordStatus" Type="varchar" Nullable="false" MaxLength="1" />
+          <Property Name="UserId" Type="varchar" Nullable="false" MaxLength="20" />
+          <Property Name="ExpirationDateTime" Type="datetime" />
+          <Property Name="SponsorNames" Type="varchar" Nullable="false" MaxLength="80" />
+          <Property Name="Gender" Type="varchar" Nullable="false" MaxLength="1" />
+          <Property Name="OrganizationContactNames" Type="varchar" MaxLength="80" />
+          <Property Name="StateOrProvince" Type="varchar" MaxLength="2" />
+          <Property Name="Country" Type="varchar" Nullable="false" MaxLength="2" />
+          <Property Name="SpeaksSpanish" Type="bit" />
+        </EntityType>
+        <EntityType Name="SponsorMemberRelation">
+          <Key>
+            <PropertyRef Name="Project" />
+            <PropertyRef Name="SponsorId" />
+            <PropertyRef Name="MemberId" />
+            <PropertyRef Name="CreationDateTime" />
+            <PropertyRef Name="Type" />
+            <PropertyRef Name="StartDate" />
+          </Key>
+          <Property Name="Project" Type="varchar" Nullable="false" MaxLength="1" />
+          <Property Name="SponsorId" Type="int" Nullable="false" />
+          <Property Name="MemberId" Type="int" Nullable="false" />
+          <Property Name="CreationDateTime" Type="datetime" Nullable="false" />
+          <Property Name="RecordStatus" Type="varchar" Nullable="false" MaxLength="1" />
+          <Property Name="UserId" Type="varchar" Nullable="false" MaxLength="20" />
+          <Property Name="ExpirationDateTime" Type="datetime" />
+          <Property Name="Type" Type="varchar" Nullable="false" MaxLength="4" />
+          <Property Name="Notes" Type="varchar" MaxLength="80" />
+          <Property Name="InactiveReason" Type="varchar" MaxLength="4" />
+          <Property Name="StartDate" Type="datetime" Nullable="false" />
+          <Property Name="EndDate" Type="datetime" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'FamiliasTest.dbo.v_AMBF_CondicionesVivienda' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="v_AMBF_CondicionesVivienda">
+          <Key>
+            <PropertyRef Name="Sitio" />
+            <PropertyRef Name="Familia" />
+          </Key>
+          <Property Name="Sitio" Type="varchar" Nullable="false" MaxLength="1" />
+          <Property Name="Familia" Type="int" Nullable="false" />
+          <Property Name="Clasificación" Type="varchar" MaxLength="1" />
+          <Property Name="TS" Type="varchar" MaxLength="20" />
+          <Property Name="Pueblo" Type="varchar" MaxLength="40" />
+          <Property Name="Tenencia" Type="varchar" MaxLength="40" />
+          <Property Name="Tamaño" Type="nvarchar" MaxLength="31" />
+          <Property Name="Cuartos" Type="int" />
+          <Property Name="Paredes" Type="varchar" MaxLength="40" />
+          <Property Name="Paredes_Calidad" Type="varchar" MaxLength="40" />
+          <Property Name="Paredes_Notas" Type="varchar" MaxLength="40" />
+          <Property Name="Techo" Type="varchar" MaxLength="40" />
+          <Property Name="Techo_Calidad" Type="varchar" MaxLength="40" />
+          <Property Name="Techo_Notas" Type="varchar" MaxLength="40" />
+          <Property Name="Piso" Type="varchar" MaxLength="40" />
+          <Property Name="Piso_Calidad" Type="varchar" MaxLength="40" />
+          <Property Name="Piso_Notas" Type="varchar" MaxLength="40" />
+          <Property Name="Cocina" Type="varchar" MaxLength="40" />
+          <Property Name="Cocina_Calidad" Type="varchar" MaxLength="40" />
+          <Property Name="Cocina_Notas" Type="varchar" MaxLength="40" />
+          <Property Name="Agua" Type="varchar" MaxLength="40" />
+          <Property Name="Electricidad" Type="varchar" MaxLength="50" />
+          <Property Name="Baño" Type="varchar" MaxLength="40" />
+          <Property Name="Drenaje" Type="varchar" MaxLength="40" />
+          <Property Name="Higiene" Type="varchar" MaxLength="40" />
+          <Property Name="CocinaTecho" Type="varchar" MaxLength="40" />
+          <Property Name="CocinaTecho_Calidad" Type="varchar" MaxLength="40" />
+          <Property Name="CocinaTecho_Notas" Type="varchar" MaxLength="40" />
+          <Property Name="pCultivar" Type="nvarchar" MaxLength="31" />
+          <Property Name="Estufa" Type="varchar" MaxLength="80" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'FamiliasTest.dbo.v_GEN_Apadrinados' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="v_GEN_Apadrinados">
+          <Key>
+            <PropertyRef Name="Project" />
+            <PropertyRef Name="TipoAfil" />
+            <PropertyRef Name="No_Afiliación" />
+            <PropertyRef Name="Nombres" />
+            <PropertyRef Name="Genero" />
+            <PropertyRef Name="Area" />
+          </Key>
+          <Property Name="Project" Type="varchar" Nullable="false" MaxLength="1" />
+          <Property Name="Sitio" Type="varchar" MaxLength="40" />
+          <Property Name="TipoAfil" Type="varchar" Nullable="false" MaxLength="40" />
+          <Property Name="No_Afiliación" Type="int" Nullable="false" />
+          <Property Name="Apellidos" Type="varchar" MaxLength="40" />
+          <Property Name="Nombres" Type="varchar" Nullable="false" MaxLength="40" />
+          <Property Name="Genero" Type="varchar" Nullable="false" MaxLength="1" />
+          <Property Name="Nacimiento" Type="varchar" MaxLength="30" />
+          <Property Name="Edad" Type="int" />
+          <Property Name="Año" Type="int" />
+          <Property Name="Grado" Type="varchar" MaxLength="80" />
+          <Property Name="Estado_Educ" Type="varchar" MaxLength="60" />
+          <Property Name="Fecha_Estado" Type="nvarchar" MaxLength="30" />
+          <Property Name="ExcepcionEstadoEduc" Type="varchar" MaxLength="40" />
+          <Property Name="Sección" Type="varchar" MaxLength="1" />
+          <Property Name="Maestro" Type="varchar" MaxLength="20" />
+          <Property Name="Nivel_Educ" Type="varchar" MaxLength="40" />
+          <Property Name="Escuela" Type="varchar" MaxLength="80" />
+          <Property Name="Semaforo" Type="varchar" MaxLength="20" />
+          <Property Name="Fase" Type="varchar" MaxLength="10" />
+          <Property Name="Razón" Type="varchar" MaxLength="40" />
+          <Property Name="FechaEstadoFase" Type="varchar" MaxLength="50" />
+          <Property Name="Padrinos" Type="int" />
+          <Property Name="NivelApadrinamiento" Type="varchar" MaxLength="40" />
+          <Property Name="Familia" Type="int" />
+          <Property Name="TS" Type="varchar" MaxLength="20" />
+          <Property Name="Región" Type="varchar" MaxLength="20" />
+          <Property Name="Madre" Type="varchar" MaxLength="50" />
+          <Property Name="Padre" Type="varchar" MaxLength="50" />
+          <Property Name="Dirección" Type="varchar" MaxLength="80" />
+          <Property Name="Pueblo" Type="varchar" MaxLength="40" />
+          <Property Name="Area" Type="varchar" Nullable="false" MaxLength="40" />
+          <Property Name="Telefonos" Type="varchar" MaxLength="700" />
+          <Property Name="Clasificación" Type="varchar" MaxLength="1" />
+          <Property Name="ProximaClasificacion" Type="varchar" MaxLength="1" />
+          <Property Name="Carrera" Type="varchar" MaxLength="100" />
+          <Property Name="FechaAfiliacion" Type="varchar" MaxLength="30" />
+          <Property Name="Restricción" Type="varchar" MaxLength="40" />
+          <Property Name="PuebloEscuela" Type="varchar" MaxLength="40" />
+          <Property Name="Ingresos" Type="decimal" />
+          <Property Name="SchoolType" Type="varchar" MaxLength="4" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'FamiliasTest.dbo.v_GEN_FamiliasAfiliadas' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="v_GEN_FamiliasAfiliadas">
+          <Key>
+            <PropertyRef Name="Sitio" />
+            <PropertyRef Name="Familia" />
+            <PropertyRef Name="Area" />
+            <PropertyRef Name="Pueblo" />
+          </Key>
+          <Property Name="Sitio" Type="varchar" Nullable="false" MaxLength="1" />
+          <Property Name="Familia" Type="int" Nullable="false" />
+          <Property Name="Dirección" Type="varchar" MaxLength="80" />
+          <Property Name="Area" Type="varchar" Nullable="false" MaxLength="40" />
+          <Property Name="Pueblo" Type="varchar" Nullable="false" MaxLength="40" />
+          <Property Name="Región" Type="varchar" MaxLength="20" />
+          <Property Name="Madre" Type="varchar" MaxLength="50" />
+          <Property Name="Padre" Type="varchar" MaxLength="50" />
+          <Property Name="TS" Type="varchar" MaxLength="20" />
+          <Property Name="UltimaActualización" Type="datetime" />
+          <Property Name="Clasificacion" Type="varchar" MaxLength="1" />
+          <Property Name="FechaClasificación" Type="varchar" MaxLength="50" />
+          <Property Name="Apadrinados" Type="int" />
+          <Property Name="Afiliados" Type="int" />
+          <Property Name="DesafiliadosGraduados" Type="int" />
+          <Property Name="FechaAfiliación" Type="varchar" MaxLength="50" />
+          <Property Name="Telefonos" Type="varchar" MaxLength="700" />
+          <Property Name="Ingresos" Type="decimal" />
+          <Property Name="IngresosJefes" Type="decimal" />
+          <Property Name="Family" Type="varchar" MaxLength="31" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'FamiliasTest.dbo.v_GEN_PoblaciónConDerechos' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="v_GEN_PoblaciónConDerechos">
+          <Key>
+            <PropertyRef Name="Sitio" />
+            <PropertyRef Name="Miembro" />
+            <PropertyRef Name="Nombres" />
+            <PropertyRef Name="Genero" />
+            <PropertyRef Name="RelaciónFamiliar" />
+            <PropertyRef Name="Familia" />
+            <PropertyRef Name="descSitio" />
+          </Key>
+          <Property Name="Sitio" Type="varchar" Nullable="false" MaxLength="1" />
+          <Property Name="Miembro" Type="int" Nullable="false" />
+          <Property Name="Apellidos" Type="varchar" MaxLength="40" />
+          <Property Name="Nombres" Type="varchar" Nullable="false" MaxLength="40" />
+          <Property Name="Genero" Type="varchar" Nullable="false" MaxLength="1" />
+          <Property Name="Nacimiento" Type="varchar" MaxLength="50" />
+          <Property Name="Edad" Type="int" />
+          <Property Name="RelaciónFamiliar" Type="varchar" Nullable="false" MaxLength="40" />
+          <Property Name="Familia" Type="int" Nullable="false" />
+          <Property Name="Clasificación" Type="varchar" MaxLength="1" />
+          <Property Name="FechaClasificación" Type="varchar" MaxLength="50" />
+          <Property Name="EstadoFamiliar" Type="varchar" MaxLength="40" />
+          <Property Name="Etnia" Type="varchar" MaxLength="40" />
+          <Property Name="Pueblo" Type="varchar" MaxLength="40" />
+          <Property Name="TS" Type="varchar" MaxLength="20" />
+          <Property Name="Región" Type="varchar" MaxLength="20" />
+          <Property Name="Teléfono" Type="varchar" MaxLength="13" />
+          <Property Name="descSitio" Type="varchar" Nullable="false" MaxLength="40" />
+          <Property Name="TipoMiembro" Type="varchar" MaxLength="40" />
+          <Property Name="GradoAcadémico" Type="varchar" MaxLength="80" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'FamiliasTest.dbo.v_GEN_PoblacionPorSitio' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="v_GEN_PoblacionPorSitio">
+          <Key>
+            <PropertyRef Name="Sitio" />
+          </Key>
+          <Property Name="Sitio" Type="varchar" Nullable="false" MaxLength="40" />
+          <Property Name="Total" Type="int" />
+        </EntityType>
+        <Association Name="FK_Member_CdGender">
+          <End Role="CdGender" Type="FamiliasTestModel.Store.CdGender" Multiplicity="1" />
+          <End Role="Member" Type="FamiliasTestModel.Store.Member" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CdGender">
+              <PropertyRef Name="Code" />
+            </Principal>
+            <Dependent Role="Member">
+              <PropertyRef Name="Gender" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_MiscMemberSponsorInfo_CdSponsorMemberRelationType">
+          <End Role="CdSponsorMemberRelationType" Type="FamiliasTestModel.Store.CdSponsorMemberRelationType" Multiplicity="0..1" />
+          <End Role="MiscMemberSponsorInfo" Type="FamiliasTestModel.Store.MiscMemberSponsorInfo" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CdSponsorMemberRelationType">
+              <PropertyRef Name="Code" />
+            </Principal>
+            <Dependent Role="MiscMemberSponsorInfo">
+              <PropertyRef Name="SponsorshipType" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_MiscMemberSponsorInfo_CdSponsorshipLevel">
+          <End Role="CdSponsorshipLevel" Type="FamiliasTestModel.Store.CdSponsorshipLevel" Multiplicity="0..1" />
+          <End Role="MiscMemberSponsorInfo" Type="FamiliasTestModel.Store.MiscMemberSponsorInfo" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CdSponsorshipLevel">
+              <PropertyRef Name="Code" />
+            </Principal>
+            <Dependent Role="MiscMemberSponsorInfo">
+              <PropertyRef Name="SponsorshipLevel" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_MiscMemberSponsorInfo_CdSponsorshipRestriction">
+          <End Role="CdSponsorshipRestriction" Type="FamiliasTestModel.Store.CdSponsorshipRestriction" Multiplicity="0..1" />
+          <End Role="MiscMemberSponsorInfo" Type="FamiliasTestModel.Store.MiscMemberSponsorInfo" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CdSponsorshipRestriction">
+              <PropertyRef Name="Code" />
+            </Principal>
+            <Dependent Role="MiscMemberSponsorInfo">
+              <PropertyRef Name="Restriction" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Sponsor_CdCountry">
+          <End Role="CdCountry" Type="FamiliasTestModel.Store.CdCountry" Multiplicity="1" />
+          <End Role="Sponsor" Type="FamiliasTestModel.Store.Sponsor" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CdCountry">
+              <PropertyRef Name="Code" />
+            </Principal>
+            <Dependent Role="Sponsor">
+              <PropertyRef Name="Country" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Sponsor_CdGender">
+          <End Role="CdGender" Type="FamiliasTestModel.Store.CdGender" Multiplicity="1" />
+          <End Role="Sponsor" Type="FamiliasTestModel.Store.Sponsor" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CdGender">
+              <PropertyRef Name="Code" />
+            </Principal>
+            <Dependent Role="Sponsor">
+              <PropertyRef Name="Gender" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Sponsor_CdStateOrProvince">
+          <End Role="CdStateOrProvince" Type="FamiliasTestModel.Store.CdStateOrProvince" Multiplicity="0..1" />
+          <End Role="Sponsor" Type="FamiliasTestModel.Store.Sponsor" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CdStateOrProvince">
+              <PropertyRef Name="Code" />
+            </Principal>
+            <Dependent Role="Sponsor">
+              <PropertyRef Name="StateOrProvince" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SponsorMemberRelation_CdSponsorMemberRelationInactiveReason">
+          <End Role="CdSponsorMemberRelationInactiveReason" Type="FamiliasTestModel.Store.CdSponsorMemberRelationInactiveReason" Multiplicity="0..1" />
+          <End Role="SponsorMemberRelation" Type="FamiliasTestModel.Store.SponsorMemberRelation" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CdSponsorMemberRelationInactiveReason">
+              <PropertyRef Name="Code" />
+            </Principal>
+            <Dependent Role="SponsorMemberRelation">
+              <PropertyRef Name="InactiveReason" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SponsorMemberRelation_CdSponsorMemberRelationType">
+          <End Role="CdSponsorMemberRelationType" Type="FamiliasTestModel.Store.CdSponsorMemberRelationType" Multiplicity="1" />
+          <End Role="SponsorMemberRelation" Type="FamiliasTestModel.Store.SponsorMemberRelation" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CdSponsorMemberRelationType">
+              <PropertyRef Name="Code" />
+            </Principal>
+            <Dependent Role="SponsorMemberRelation">
+              <PropertyRef Name="Type" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="FamiliasTestModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="FamiliasTestEntities" p1:LazyLoadingEnabled="true">
+          <EntitySet Name="CdCountries" EntityType="FamiliasTestModel.CdCountry" />
+          <EntitySet Name="CdGenders" EntityType="FamiliasTestModel.CdGender" />
+          <EntitySet Name="CdSponsorMemberRelationInactiveReasons" EntityType="FamiliasTestModel.CdSponsorMemberRelationInactiveReason" />
+          <EntitySet Name="CdSponsorMemberRelationTypes" EntityType="FamiliasTestModel.CdSponsorMemberRelationType" />
+          <EntitySet Name="CdSponsorshipLevels" EntityType="FamiliasTestModel.CdSponsorshipLevel" />
+          <EntitySet Name="CdSponsorshipRestrictions" EntityType="FamiliasTestModel.CdSponsorshipRestriction" />
+          <EntitySet Name="CdStateOrProvinces" EntityType="FamiliasTestModel.CdStateOrProvince" />
+          <EntitySet Name="Members" EntityType="FamiliasTestModel.Member" />
+          <EntitySet Name="MiscMemberSponsorInfoes" EntityType="FamiliasTestModel.MiscMemberSponsorInfo" />
+          <EntitySet Name="Sponsors" EntityType="FamiliasTestModel.Sponsor" />
+          <EntitySet Name="SponsorMemberRelations" EntityType="FamiliasTestModel.SponsorMemberRelation" />
+          <EntitySet Name="v_AMBF_CondicionesVivienda" EntityType="FamiliasTestModel.v_AMBF_CondicionesVivienda" />
+          <EntitySet Name="v_GEN_Apadrinados" EntityType="FamiliasTestModel.v_GEN_Apadrinados" />
+          <EntitySet Name="v_GEN_FamiliasAfiliadas" EntityType="FamiliasTestModel.v_GEN_FamiliasAfiliadas" />
+          <EntitySet Name="v_GEN_PoblaciónConDerechos" EntityType="FamiliasTestModel.v_GEN_PoblaciónConDerechos" />
+          <EntitySet Name="v_GEN_PoblacionPorSitio" EntityType="FamiliasTestModel.v_GEN_PoblacionPorSitio" />
+          <AssociationSet Name="FK_Sponsor_CdCountry" Association="FamiliasTestModel.FK_Sponsor_CdCountry">
+            <End Role="CdCountry" EntitySet="CdCountries" />
+            <End Role="Sponsor" EntitySet="Sponsors" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Member_CdGender" Association="FamiliasTestModel.FK_Member_CdGender">
+            <End Role="CdGender" EntitySet="CdGenders" />
+            <End Role="Member" EntitySet="Members" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Sponsor_CdGender" Association="FamiliasTestModel.FK_Sponsor_CdGender">
+            <End Role="CdGender" EntitySet="CdGenders" />
+            <End Role="Sponsor" EntitySet="Sponsors" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SponsorMemberRelation_CdSponsorMemberRelationInactiveReason" Association="FamiliasTestModel.FK_SponsorMemberRelation_CdSponsorMemberRelationInactiveReason">
+            <End Role="CdSponsorMemberRelationInactiveReason" EntitySet="CdSponsorMemberRelationInactiveReasons" />
+            <End Role="SponsorMemberRelation" EntitySet="SponsorMemberRelations" />
+          </AssociationSet>
+          <AssociationSet Name="FK_MiscMemberSponsorInfo_CdSponsorMemberRelationType" Association="FamiliasTestModel.FK_MiscMemberSponsorInfo_CdSponsorMemberRelationType">
+            <End Role="CdSponsorMemberRelationType" EntitySet="CdSponsorMemberRelationTypes" />
+            <End Role="MiscMemberSponsorInfo" EntitySet="MiscMemberSponsorInfoes" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SponsorMemberRelation_CdSponsorMemberRelationType" Association="FamiliasTestModel.FK_SponsorMemberRelation_CdSponsorMemberRelationType">
+            <End Role="CdSponsorMemberRelationType" EntitySet="CdSponsorMemberRelationTypes" />
+            <End Role="SponsorMemberRelation" EntitySet="SponsorMemberRelations" />
+          </AssociationSet>
+          <AssociationSet Name="FK_MiscMemberSponsorInfo_CdSponsorshipLevel" Association="FamiliasTestModel.FK_MiscMemberSponsorInfo_CdSponsorshipLevel">
+            <End Role="CdSponsorshipLevel" EntitySet="CdSponsorshipLevels" />
+            <End Role="MiscMemberSponsorInfo" EntitySet="MiscMemberSponsorInfoes" />
+          </AssociationSet>
+          <AssociationSet Name="FK_MiscMemberSponsorInfo_CdSponsorshipRestriction" Association="FamiliasTestModel.FK_MiscMemberSponsorInfo_CdSponsorshipRestriction">
+            <End Role="CdSponsorshipRestriction" EntitySet="CdSponsorshipRestrictions" />
+            <End Role="MiscMemberSponsorInfo" EntitySet="MiscMemberSponsorInfoes" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Sponsor_CdStateOrProvince" Association="FamiliasTestModel.FK_Sponsor_CdStateOrProvince">
+            <End Role="CdStateOrProvince" EntitySet="CdStateOrProvinces" />
+            <End Role="Sponsor" EntitySet="Sponsors" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="CdCountry">
+          <Key>
+            <PropertyRef Name="Code" />
+          </Key>
+          <Property Name="Code" Type="String" Nullable="false" MaxLength="2" Unicode="false" FixedLength="false" />
+          <Property Name="DescEnglish" Type="String" Nullable="false" MaxLength="40" Unicode="false" FixedLength="false" />
+          <Property Name="DescSpanish" Type="String" Nullable="false" MaxLength="40" Unicode="false" FixedLength="false" />
+          <NavigationProperty Name="Sponsors" Relationship="FamiliasTestModel.FK_Sponsor_CdCountry" FromRole="CdCountry" ToRole="Sponsor" />
+        </EntityType>
+        <EntityType Name="CdGender">
+          <Key>
+            <PropertyRef Name="Code" />
+          </Key>
+          <Property Name="Code" Type="String" Nullable="false" MaxLength="1" Unicode="false" FixedLength="false" />
+          <Property Name="DescSpanish" Type="String" Nullable="false" MaxLength="40" Unicode="false" FixedLength="false" />
+          <Property Name="DescEnglish" Type="String" Nullable="false" MaxLength="40" Unicode="false" FixedLength="false" />
+          <NavigationProperty Name="Members" Relationship="FamiliasTestModel.FK_Member_CdGender" FromRole="CdGender" ToRole="Member" />
+          <NavigationProperty Name="Sponsors" Relationship="FamiliasTestModel.FK_Sponsor_CdGender" FromRole="CdGender" ToRole="Sponsor" />
+        </EntityType>
+        <EntityType Name="CdSponsorMemberRelationInactiveReason">
+          <Key>
+            <PropertyRef Name="Code" />
+          </Key>
+          <Property Name="Code" Type="String" Nullable="false" MaxLength="4" Unicode="false" FixedLength="false" />
+          <Property Name="DescSpanish" Type="String" Nullable="false" MaxLength="40" Unicode="false" FixedLength="false" />
+          <Property Name="DescEnglish" Type="String" Nullable="false" MaxLength="40" Unicode="false" FixedLength="false" />
+          <NavigationProperty Name="SponsorMemberRelations" Relationship="FamiliasTestModel.FK_SponsorMemberRelation_CdSponsorMemberRelationInactiveReason" FromRole="CdSponsorMemberRelationInactiveReason" ToRole="SponsorMemberRelation" />
+        </EntityType>
+        <EntityType Name="CdSponsorMemberRelationType">
+          <Key>
+            <PropertyRef Name="Code" />
+          </Key>
+          <Property Name="Code" Type="String" Nullable="false" MaxLength="4" Unicode="false" FixedLength="false" />
+          <Property Name="DescEnglish" Type="String" Nullable="false" MaxLength="40" Unicode="false" FixedLength="false" />
+          <Property Name="DescSpanish" Type="String" Nullable="false" MaxLength="40" Unicode="false" FixedLength="false" />
+          <Property Name="SponsorshipLevelPoints" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="MiscMemberSponsorInfoes" Relationship="FamiliasTestModel.FK_MiscMemberSponsorInfo_CdSponsorMemberRelationType" FromRole="CdSponsorMemberRelationType" ToRole="MiscMemberSponsorInfo" />
+          <NavigationProperty Name="SponsorMemberRelations" Relationship="FamiliasTestModel.FK_SponsorMemberRelation_CdSponsorMemberRelationType" FromRole="CdSponsorMemberRelationType" ToRole="SponsorMemberRelation" />
+        </EntityType>
+        <EntityType Name="CdSponsorshipLevel">
+          <Key>
+            <PropertyRef Name="Code" />
+          </Key>
+          <Property Name="Code" Type="String" Nullable="false" MaxLength="4" Unicode="false" FixedLength="false" />
+          <Property Name="DescEnglish" Type="String" Nullable="false" MaxLength="40" Unicode="false" FixedLength="false" />
+          <Property Name="DescSpanish" Type="String" Nullable="false" MaxLength="40" Unicode="false" FixedLength="false" />
+          <Property Name="SponsorshipLevelPoints" Type="Int32" />
+          <NavigationProperty Name="MiscMemberSponsorInfoes" Relationship="FamiliasTestModel.FK_MiscMemberSponsorInfo_CdSponsorshipLevel" FromRole="CdSponsorshipLevel" ToRole="MiscMemberSponsorInfo" />
+        </EntityType>
+        <EntityType Name="CdSponsorshipRestriction">
+          <Key>
+            <PropertyRef Name="Code" />
+          </Key>
+          <Property Name="Code" Type="String" Nullable="false" MaxLength="4" Unicode="false" FixedLength="false" />
+          <Property Name="DescEnglish" Type="String" Nullable="false" MaxLength="40" Unicode="false" FixedLength="false" />
+          <Property Name="DescSpanish" Type="String" Nullable="false" MaxLength="40" Unicode="false" FixedLength="false" />
+          <NavigationProperty Name="MiscMemberSponsorInfoes" Relationship="FamiliasTestModel.FK_MiscMemberSponsorInfo_CdSponsorshipRestriction" FromRole="CdSponsorshipRestriction" ToRole="MiscMemberSponsorInfo" />
+        </EntityType>
+        <EntityType Name="CdStateOrProvince">
+          <Key>
+            <PropertyRef Name="Code" />
+          </Key>
+          <Property Name="Code" Type="String" Nullable="false" MaxLength="2" Unicode="false" FixedLength="false" />
+          <Property Name="DescEnglish" Type="String" Nullable="false" MaxLength="40" Unicode="false" FixedLength="false" />
+          <Property Name="DescSpanish" Type="String" Nullable="false" MaxLength="40" Unicode="false" FixedLength="false" />
+          <Property Name="Country" Type="String" Nullable="false" MaxLength="2" Unicode="false" FixedLength="false" />
+          <NavigationProperty Name="Sponsors" Relationship="FamiliasTestModel.FK_Sponsor_CdStateOrProvince" FromRole="CdStateOrProvince" ToRole="Sponsor" />
+        </EntityType>
+        <EntityType Name="Member">
+          <Key>
+            <PropertyRef Name="Project" />
+            <PropertyRef Name="MemberId" />
+            <PropertyRef Name="CreationDateTime" />
+          </Key>
+          <Property Name="Project" Type="String" Nullable="false" MaxLength="1" Unicode="false" FixedLength="false" />
+          <Property Name="MemberId" Type="Int32" Nullable="false" />
+          <Property Name="CreationDateTime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="RecordStatus" Type="String" Nullable="false" MaxLength="1" Unicode="false" FixedLength="false" />
+          <Property Name="UserId" Type="String" Nullable="false" MaxLength="20" Unicode="false" FixedLength="false" />
+          <Property Name="ExpirationDateTime" Type="DateTime" Precision="3" />
+          <Property Name="LastFamilyId" Type="Int32" />
+          <Property Name="FirstNames" Type="String" Nullable="false" MaxLength="40" Unicode="false" FixedLength="false" />
+          <Property Name="LastNames" Type="String" MaxLength="40" Unicode="false" FixedLength="false" />
+          <Property Name="PreferredName" Type="String" MaxLength="40" Unicode="false" FixedLength="false" />
+          <Property Name="BirthDate" Type="DateTime" Precision="3" />
+          <Property Name="Gender" Type="String" Nullable="false" MaxLength="1" Unicode="false" FixedLength="false" />
+          <Property Name="AffiliationType" Type="String" MaxLength="4" Unicode="false" FixedLength="false" />
+          <Property Name="AffiliationStatus" Type="String" MaxLength="4" Unicode="false" FixedLength="false" />
+          <Property Name="AffiliationStatusDate" Type="DateTime" Precision="3" />
+          <Property Name="LiveDead" Type="String" Nullable="false" MaxLength="1" Unicode="false" FixedLength="false" />
+          <Property Name="DeathDate" Type="DateTime" Precision="3" />
+          <Property Name="BiologicalMotherMemberId" Type="Int32" />
+          <Property Name="BiologicalFatherMemberId" Type="Int32" />
+          <Property Name="OtherAffiliation" Type="String" MaxLength="4" Unicode="false" FixedLength="false" />
+          <Property Name="OfficialId" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+          <Property Name="HasFaithOfAgeOrOfficialId" Type="Boolean" Nullable="false" />
+          <Property Name="CellularPhoneNumber" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="Literacy" Type="String" MaxLength="4" Unicode="false" FixedLength="false" />
+          <Property Name="LastGradePassed" Type="String" MaxLength="4" Unicode="false" FixedLength="false" />
+          <Property Name="HasHealthCard" Type="Boolean" />
+          <Property Name="ExceptionInAgePolicy" Type="String" MaxLength="4" Unicode="false" FixedLength="false" />
+          <Property Name="LastGradePassedYear" Type="Int32" />
+          <Property Name="LastGradePassedStatus" Type="String" MaxLength="4" Unicode="false" FixedLength="false" />
+          <NavigationProperty Name="CdGender" Relationship="FamiliasTestModel.FK_Member_CdGender" FromRole="Member" ToRole="CdGender" />
+        </EntityType>
+        <EntityType Name="MiscMemberSponsorInfo">
+          <Key>
+            <PropertyRef Name="Project" />
+            <PropertyRef Name="MemberId" />
+            <PropertyRef Name="CreationDateTime" />
+          </Key>
+          <Property Name="Project" Type="String" Nullable="false" MaxLength="1" Unicode="false" FixedLength="false" />
+          <Property Name="MemberId" Type="Int32" Nullable="false" />
+          <Property Name="CreationDateTime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="RecordStatus" Type="String" Nullable="false" MaxLength="1" Unicode="false" FixedLength="false" />
+          <Property Name="UserId" Type="String" Nullable="false" MaxLength="20" Unicode="false" FixedLength="false" />
+          <Property Name="ExpirationDateTime" Type="DateTime" Precision="3" />
+          <Property Name="Photo" Type="String" MaxLength="80" Unicode="false" FixedLength="false" />
+          <Property Name="PhotoDate" Type="DateTime" Precision="3" />
+          <Property Name="RetakePhotoDate" Type="DateTime" Precision="3" />
+          <Property Name="RetakePhotoUserId" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+          <Property Name="LastCarnetPrintDate" Type="DateTime" Precision="3" />
+          <Property Name="SponsorshipLevel" Type="String" MaxLength="4" Unicode="false" FixedLength="false" />
+          <Property Name="SponsorshipType" Type="String" MaxLength="4" Unicode="false" FixedLength="false" />
+          <Property Name="Restriction" Type="String" MaxLength="4" Unicode="false" FixedLength="false" />
+          <Property Name="RestrictionDate" Type="DateTime" Precision="3" />
+          <Property Name="ExceptionPhotoDate" Type="DateTime" Precision="3" />
+          <NavigationProperty Name="CdSponsorMemberRelationType" Relationship="FamiliasTestModel.FK_MiscMemberSponsorInfo_CdSponsorMemberRelationType" FromRole="MiscMemberSponsorInfo" ToRole="CdSponsorMemberRelationType" />
+          <NavigationProperty Name="CdSponsorshipLevel" Relationship="FamiliasTestModel.FK_MiscMemberSponsorInfo_CdSponsorshipLevel" FromRole="MiscMemberSponsorInfo" ToRole="CdSponsorshipLevel" />
+          <NavigationProperty Name="CdSponsorshipRestriction" Relationship="FamiliasTestModel.FK_MiscMemberSponsorInfo_CdSponsorshipRestriction" FromRole="MiscMemberSponsorInfo" ToRole="CdSponsorshipRestriction" />
+        </EntityType>
+        <EntityType Name="Sponsor">
+          <Key>
+            <PropertyRef Name="SponsorId" />
+            <PropertyRef Name="CreationDateTime" />
+          </Key>
+          <Property Name="SponsorId" Type="Int32" Nullable="false" />
+          <Property Name="CreationDateTime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="RecordStatus" Type="String" Nullable="false" MaxLength="1" Unicode="false" FixedLength="false" />
+          <Property Name="UserId" Type="String" Nullable="false" MaxLength="20" Unicode="false" FixedLength="false" />
+          <Property Name="ExpirationDateTime" Type="DateTime" Precision="3" />
+          <Property Name="SponsorNames" Type="String" Nullable="false" MaxLength="80" Unicode="false" FixedLength="false" />
+          <Property Name="Gender" Type="String" Nullable="false" MaxLength="1" Unicode="false" FixedLength="false" />
+          <Property Name="OrganizationContactNames" Type="String" MaxLength="80" Unicode="false" FixedLength="false" />
+          <Property Name="StateOrProvince" Type="String" MaxLength="2" Unicode="false" FixedLength="false" />
+          <Property Name="Country" Type="String" Nullable="false" MaxLength="2" Unicode="false" FixedLength="false" />
+          <Property Name="SpeaksSpanish" Type="Boolean" />
+          <NavigationProperty Name="CdCountry" Relationship="FamiliasTestModel.FK_Sponsor_CdCountry" FromRole="Sponsor" ToRole="CdCountry" />
+          <NavigationProperty Name="CdGender" Relationship="FamiliasTestModel.FK_Sponsor_CdGender" FromRole="Sponsor" ToRole="CdGender" />
+          <NavigationProperty Name="CdStateOrProvince" Relationship="FamiliasTestModel.FK_Sponsor_CdStateOrProvince" FromRole="Sponsor" ToRole="CdStateOrProvince" />
+        </EntityType>
+        <EntityType Name="SponsorMemberRelation">
+          <Key>
+            <PropertyRef Name="Project" />
+            <PropertyRef Name="SponsorId" />
+            <PropertyRef Name="MemberId" />
+            <PropertyRef Name="CreationDateTime" />
+            <PropertyRef Name="Type" />
+            <PropertyRef Name="StartDate" />
+          </Key>
+          <Property Name="Project" Type="String" Nullable="false" MaxLength="1" Unicode="false" FixedLength="false" />
+          <Property Name="SponsorId" Type="Int32" Nullable="false" />
+          <Property Name="MemberId" Type="Int32" Nullable="false" />
+          <Property Name="CreationDateTime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="RecordStatus" Type="String" Nullable="false" MaxLength="1" Unicode="false" FixedLength="false" />
+          <Property Name="UserId" Type="String" Nullable="false" MaxLength="20" Unicode="false" FixedLength="false" />
+          <Property Name="ExpirationDateTime" Type="DateTime" Precision="3" />
+          <Property Name="Type" Type="String" Nullable="false" MaxLength="4" Unicode="false" FixedLength="false" />
+          <Property Name="Notes" Type="String" MaxLength="80" Unicode="false" FixedLength="false" />
+          <Property Name="InactiveReason" Type="String" MaxLength="4" Unicode="false" FixedLength="false" />
+          <Property Name="StartDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="EndDate" Type="DateTime" Precision="3" />
+          <NavigationProperty Name="CdSponsorMemberRelationInactiveReason" Relationship="FamiliasTestModel.FK_SponsorMemberRelation_CdSponsorMemberRelationInactiveReason" FromRole="SponsorMemberRelation" ToRole="CdSponsorMemberRelationInactiveReason" />
+          <NavigationProperty Name="CdSponsorMemberRelationType" Relationship="FamiliasTestModel.FK_SponsorMemberRelation_CdSponsorMemberRelationType" FromRole="SponsorMemberRelation" ToRole="CdSponsorMemberRelationType" />
+        </EntityType>
+        <EntityType Name="v_AMBF_CondicionesVivienda">
+          <Key>
+            <PropertyRef Name="Sitio" />
+            <PropertyRef Name="Familia" />
+          </Key>
+          <Property Name="Sitio" Type="String" Nullable="false" MaxLength="1" Unicode="false" FixedLength="false" />
+          <Property Name="Familia" Type="Int32" Nullable="false" />
+          <Property Name="Clasificación" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+          <Property Name="TS" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+          <Property Name="Pueblo" Type="String" MaxLength="40" Unicode="false" FixedLength="false" />
+          <Property Name="Tenencia" Type="String" MaxLength="40" Unicode="false" FixedLength="false" />
+          <Property Name="Tamaño" Type="String" MaxLength="31" Unicode="true" FixedLength="false" />
+          <Property Name="Cuartos" Type="Int32" />
+          <Property Name="Paredes" Type="String" MaxLength="40" Unicode="false" FixedLength="false" />
+          <Property Name="Paredes_Calidad" Type="String" MaxLength="40" Unicode="false" FixedLength="false" />
+          <Property Name="Paredes_Notas" Type="String" MaxLength="40" Unicode="false" FixedLength="false" />
+          <Property Name="Techo" Type="String" MaxLength="40" Unicode="false" FixedLength="false" />
+          <Property Name="Techo_Calidad" Type="String" MaxLength="40" Unicode="false" FixedLength="false" />
+          <Property Name="Techo_Notas" Type="String" MaxLength="40" Unicode="false" FixedLength="false" />
+          <Property Name="Piso" Type="String" MaxLength="40" Unicode="false" FixedLength="false" />
+          <Property Name="Piso_Calidad" Type="String" MaxLength="40" Unicode="false" FixedLength="false" />
+          <Property Name="Piso_Notas" Type="String" MaxLength="40" Unicode="false" FixedLength="false" />
+          <Property Name="Cocina" Type="String" MaxLength="40" Unicode="false" FixedLength="false" />
+          <Property Name="Cocina_Calidad" Type="String" MaxLength="40" Unicode="false" FixedLength="false" />
+          <Property Name="Cocina_Notas" Type="String" MaxLength="40" Unicode="false" FixedLength="false" />
+          <Property Name="Agua" Type="String" MaxLength="40" Unicode="false" FixedLength="false" />
+          <Property Name="Electricidad" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="Baño" Type="String" MaxLength="40" Unicode="false" FixedLength="false" />
+          <Property Name="Drenaje" Type="String" MaxLength="40" Unicode="false" FixedLength="false" />
+          <Property Name="Higiene" Type="String" MaxLength="40" Unicode="false" FixedLength="false" />
+          <Property Name="CocinaTecho" Type="String" MaxLength="40" Unicode="false" FixedLength="false" />
+          <Property Name="CocinaTecho_Calidad" Type="String" MaxLength="40" Unicode="false" FixedLength="false" />
+          <Property Name="CocinaTecho_Notas" Type="String" MaxLength="40" Unicode="false" FixedLength="false" />
+          <Property Name="pCultivar" Type="String" MaxLength="31" Unicode="true" FixedLength="false" />
+          <Property Name="Estufa" Type="String" MaxLength="80" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="v_GEN_Apadrinados">
+          <Key>
+            <PropertyRef Name="Project" />
+            <PropertyRef Name="TipoAfil" />
+            <PropertyRef Name="No_Afiliación" />
+            <PropertyRef Name="Nombres" />
+            <PropertyRef Name="Genero" />
+            <PropertyRef Name="Area" />
+          </Key>
+          <Property Name="Project" Type="String" Nullable="false" MaxLength="1" Unicode="false" FixedLength="false" />
+          <Property Name="Sitio" Type="String" MaxLength="40" Unicode="false" FixedLength="false" />
+          <Property Name="TipoAfil" Type="String" Nullable="false" MaxLength="40" Unicode="false" FixedLength="false" />
+          <Property Name="No_Afiliación" Type="Int32" Nullable="false" />
+          <Property Name="Apellidos" Type="String" MaxLength="40" Unicode="false" FixedLength="false" />
+          <Property Name="Nombres" Type="String" Nullable="false" MaxLength="40" Unicode="false" FixedLength="false" />
+          <Property Name="Genero" Type="String" Nullable="false" MaxLength="1" Unicode="false" FixedLength="false" />
+          <Property Name="Nacimiento" Type="String" MaxLength="30" Unicode="false" FixedLength="false" />
+          <Property Name="Edad" Type="Int32" />
+          <Property Name="Año" Type="Int32" />
+          <Property Name="Grado" Type="String" MaxLength="80" Unicode="false" FixedLength="false" />
+          <Property Name="Estado_Educ" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="Fecha_Estado" Type="String" MaxLength="30" Unicode="true" FixedLength="false" />
+          <Property Name="ExcepcionEstadoEduc" Type="String" MaxLength="40" Unicode="false" FixedLength="false" />
+          <Property Name="Sección" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+          <Property Name="Maestro" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+          <Property Name="Nivel_Educ" Type="String" MaxLength="40" Unicode="false" FixedLength="false" />
+          <Property Name="Escuela" Type="String" MaxLength="80" Unicode="false" FixedLength="false" />
+          <Property Name="Semaforo" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+          <Property Name="Fase" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="Razón" Type="String" MaxLength="40" Unicode="false" FixedLength="false" />
+          <Property Name="FechaEstadoFase" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="Padrinos" Type="Int32" />
+          <Property Name="NivelApadrinamiento" Type="String" MaxLength="40" Unicode="false" FixedLength="false" />
+          <Property Name="Familia" Type="Int32" />
+          <Property Name="TS" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+          <Property Name="Región" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+          <Property Name="Madre" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="Padre" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="Dirección" Type="String" MaxLength="80" Unicode="false" FixedLength="false" />
+          <Property Name="Pueblo" Type="String" MaxLength="40" Unicode="false" FixedLength="false" />
+          <Property Name="Area" Type="String" Nullable="false" MaxLength="40" Unicode="false" FixedLength="false" />
+          <Property Name="Telefonos" Type="String" MaxLength="700" Unicode="false" FixedLength="false" />
+          <Property Name="Clasificación" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+          <Property Name="ProximaClasificacion" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+          <Property Name="Carrera" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="FechaAfiliacion" Type="String" MaxLength="30" Unicode="false" FixedLength="false" />
+          <Property Name="Restricción" Type="String" MaxLength="40" Unicode="false" FixedLength="false" />
+          <Property Name="PuebloEscuela" Type="String" MaxLength="40" Unicode="false" FixedLength="false" />
+          <Property Name="Ingresos" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="SchoolType" Type="String" MaxLength="4" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="v_GEN_FamiliasAfiliadas">
+          <Key>
+            <PropertyRef Name="Sitio" />
+            <PropertyRef Name="Familia" />
+            <PropertyRef Name="Area" />
+            <PropertyRef Name="Pueblo" />
+          </Key>
+          <Property Name="Sitio" Type="String" Nullable="false" MaxLength="1" Unicode="false" FixedLength="false" />
+          <Property Name="Familia" Type="Int32" Nullable="false" />
+          <Property Name="Dirección" Type="String" MaxLength="80" Unicode="false" FixedLength="false" />
+          <Property Name="Area" Type="String" Nullable="false" MaxLength="40" Unicode="false" FixedLength="false" />
+          <Property Name="Pueblo" Type="String" Nullable="false" MaxLength="40" Unicode="false" FixedLength="false" />
+          <Property Name="Región" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+          <Property Name="Madre" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="Padre" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="TS" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+          <Property Name="UltimaActualización" Type="DateTime" Precision="3" />
+          <Property Name="Clasificacion" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+          <Property Name="FechaClasificación" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="Apadrinados" Type="Int32" />
+          <Property Name="Afiliados" Type="Int32" />
+          <Property Name="DesafiliadosGraduados" Type="Int32" />
+          <Property Name="FechaAfiliación" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="Telefonos" Type="String" MaxLength="700" Unicode="false" FixedLength="false" />
+          <Property Name="Ingresos" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="IngresosJefes" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="Family" Type="String" MaxLength="31" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="v_GEN_PoblaciónConDerechos">
+          <Key>
+            <PropertyRef Name="Sitio" />
+            <PropertyRef Name="Miembro" />
+            <PropertyRef Name="Nombres" />
+            <PropertyRef Name="Genero" />
+            <PropertyRef Name="RelaciónFamiliar" />
+            <PropertyRef Name="Familia" />
+            <PropertyRef Name="descSitio" />
+          </Key>
+          <Property Name="Sitio" Type="String" Nullable="false" MaxLength="1" Unicode="false" FixedLength="false" />
+          <Property Name="Miembro" Type="Int32" Nullable="false" />
+          <Property Name="Apellidos" Type="String" MaxLength="40" Unicode="false" FixedLength="false" />
+          <Property Name="Nombres" Type="String" Nullable="false" MaxLength="40" Unicode="false" FixedLength="false" />
+          <Property Name="Genero" Type="String" Nullable="false" MaxLength="1" Unicode="false" FixedLength="false" />
+          <Property Name="Nacimiento" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="Edad" Type="Int32" />
+          <Property Name="RelaciónFamiliar" Type="String" Nullable="false" MaxLength="40" Unicode="false" FixedLength="false" />
+          <Property Name="Familia" Type="Int32" Nullable="false" />
+          <Property Name="Clasificación" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+          <Property Name="FechaClasificación" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="EstadoFamiliar" Type="String" MaxLength="40" Unicode="false" FixedLength="false" />
+          <Property Name="Etnia" Type="String" MaxLength="40" Unicode="false" FixedLength="false" />
+          <Property Name="Pueblo" Type="String" MaxLength="40" Unicode="false" FixedLength="false" />
+          <Property Name="TS" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+          <Property Name="Región" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+          <Property Name="Teléfono" Type="String" MaxLength="13" Unicode="false" FixedLength="false" />
+          <Property Name="descSitio" Type="String" Nullable="false" MaxLength="40" Unicode="false" FixedLength="false" />
+          <Property Name="TipoMiembro" Type="String" MaxLength="40" Unicode="false" FixedLength="false" />
+          <Property Name="GradoAcadémico" Type="String" MaxLength="80" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="v_GEN_PoblacionPorSitio">
+          <Key>
+            <PropertyRef Name="Sitio" />
+          </Key>
+          <Property Name="Sitio" Type="String" Nullable="false" MaxLength="40" Unicode="false" FixedLength="false" />
+          <Property Name="Total" Type="Int32" />
+        </EntityType>
+        <Association Name="FK_Sponsor_CdCountry">
+          <End Role="CdCountry" Type="FamiliasTestModel.CdCountry" Multiplicity="1" />
+          <End Role="Sponsor" Type="FamiliasTestModel.Sponsor" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CdCountry">
+              <PropertyRef Name="Code" />
+            </Principal>
+            <Dependent Role="Sponsor">
+              <PropertyRef Name="Country" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Member_CdGender">
+          <End Role="CdGender" Type="FamiliasTestModel.CdGender" Multiplicity="1" />
+          <End Role="Member" Type="FamiliasTestModel.Member" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CdGender">
+              <PropertyRef Name="Code" />
+            </Principal>
+            <Dependent Role="Member">
+              <PropertyRef Name="Gender" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Sponsor_CdGender">
+          <End Role="CdGender" Type="FamiliasTestModel.CdGender" Multiplicity="1" />
+          <End Role="Sponsor" Type="FamiliasTestModel.Sponsor" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CdGender">
+              <PropertyRef Name="Code" />
+            </Principal>
+            <Dependent Role="Sponsor">
+              <PropertyRef Name="Gender" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SponsorMemberRelation_CdSponsorMemberRelationInactiveReason">
+          <End Role="CdSponsorMemberRelationInactiveReason" Type="FamiliasTestModel.CdSponsorMemberRelationInactiveReason" Multiplicity="0..1" />
+          <End Role="SponsorMemberRelation" Type="FamiliasTestModel.SponsorMemberRelation" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CdSponsorMemberRelationInactiveReason">
+              <PropertyRef Name="Code" />
+            </Principal>
+            <Dependent Role="SponsorMemberRelation">
+              <PropertyRef Name="InactiveReason" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_MiscMemberSponsorInfo_CdSponsorMemberRelationType">
+          <End Role="CdSponsorMemberRelationType" Type="FamiliasTestModel.CdSponsorMemberRelationType" Multiplicity="0..1" />
+          <End Role="MiscMemberSponsorInfo" Type="FamiliasTestModel.MiscMemberSponsorInfo" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CdSponsorMemberRelationType">
+              <PropertyRef Name="Code" />
+            </Principal>
+            <Dependent Role="MiscMemberSponsorInfo">
+              <PropertyRef Name="SponsorshipType" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SponsorMemberRelation_CdSponsorMemberRelationType">
+          <End Role="CdSponsorMemberRelationType" Type="FamiliasTestModel.CdSponsorMemberRelationType" Multiplicity="1" />
+          <End Role="SponsorMemberRelation" Type="FamiliasTestModel.SponsorMemberRelation" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CdSponsorMemberRelationType">
+              <PropertyRef Name="Code" />
+            </Principal>
+            <Dependent Role="SponsorMemberRelation">
+              <PropertyRef Name="Type" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_MiscMemberSponsorInfo_CdSponsorshipLevel">
+          <End Role="CdSponsorshipLevel" Type="FamiliasTestModel.CdSponsorshipLevel" Multiplicity="0..1" />
+          <End Role="MiscMemberSponsorInfo" Type="FamiliasTestModel.MiscMemberSponsorInfo" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CdSponsorshipLevel">
+              <PropertyRef Name="Code" />
+            </Principal>
+            <Dependent Role="MiscMemberSponsorInfo">
+              <PropertyRef Name="SponsorshipLevel" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_MiscMemberSponsorInfo_CdSponsorshipRestriction">
+          <End Role="CdSponsorshipRestriction" Type="FamiliasTestModel.CdSponsorshipRestriction" Multiplicity="0..1" />
+          <End Role="MiscMemberSponsorInfo" Type="FamiliasTestModel.MiscMemberSponsorInfo" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CdSponsorshipRestriction">
+              <PropertyRef Name="Code" />
+            </Principal>
+            <Dependent Role="MiscMemberSponsorInfo">
+              <PropertyRef Name="Restriction" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Sponsor_CdStateOrProvince">
+          <End Role="CdStateOrProvince" Type="FamiliasTestModel.CdStateOrProvince" Multiplicity="0..1" />
+          <End Role="Sponsor" Type="FamiliasTestModel.Sponsor" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CdStateOrProvince">
+              <PropertyRef Name="Code" />
+            </Principal>
+            <Dependent Role="Sponsor">
+              <PropertyRef Name="StateOrProvince" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="FamiliasTestModelStoreContainer" CdmEntityContainer="FamiliasTestEntities">
+          <EntitySetMapping Name="CdCountries">
+            <EntityTypeMapping TypeName="FamiliasTestModel.CdCountry">
+              <MappingFragment StoreEntitySet="CdCountry">
+                <ScalarProperty Name="Code" ColumnName="Code" />
+                <ScalarProperty Name="DescEnglish" ColumnName="DescEnglish" />
+                <ScalarProperty Name="DescSpanish" ColumnName="DescSpanish" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CdGenders">
+            <EntityTypeMapping TypeName="FamiliasTestModel.CdGender">
+              <MappingFragment StoreEntitySet="CdGender">
+                <ScalarProperty Name="Code" ColumnName="Code" />
+                <ScalarProperty Name="DescSpanish" ColumnName="DescSpanish" />
+                <ScalarProperty Name="DescEnglish" ColumnName="DescEnglish" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CdSponsorMemberRelationInactiveReasons">
+            <EntityTypeMapping TypeName="FamiliasTestModel.CdSponsorMemberRelationInactiveReason">
+              <MappingFragment StoreEntitySet="CdSponsorMemberRelationInactiveReason">
+                <ScalarProperty Name="Code" ColumnName="Code" />
+                <ScalarProperty Name="DescSpanish" ColumnName="DescSpanish" />
+                <ScalarProperty Name="DescEnglish" ColumnName="DescEnglish" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CdSponsorMemberRelationTypes">
+            <EntityTypeMapping TypeName="FamiliasTestModel.CdSponsorMemberRelationType">
+              <MappingFragment StoreEntitySet="CdSponsorMemberRelationType">
+                <ScalarProperty Name="Code" ColumnName="Code" />
+                <ScalarProperty Name="DescEnglish" ColumnName="DescEnglish" />
+                <ScalarProperty Name="DescSpanish" ColumnName="DescSpanish" />
+                <ScalarProperty Name="SponsorshipLevelPoints" ColumnName="SponsorshipLevelPoints" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CdSponsorshipLevels">
+            <EntityTypeMapping TypeName="FamiliasTestModel.CdSponsorshipLevel">
+              <MappingFragment StoreEntitySet="CdSponsorshipLevel">
+                <ScalarProperty Name="Code" ColumnName="Code" />
+                <ScalarProperty Name="DescEnglish" ColumnName="DescEnglish" />
+                <ScalarProperty Name="DescSpanish" ColumnName="DescSpanish" />
+                <ScalarProperty Name="SponsorshipLevelPoints" ColumnName="SponsorshipLevelPoints" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CdSponsorshipRestrictions">
+            <EntityTypeMapping TypeName="FamiliasTestModel.CdSponsorshipRestriction">
+              <MappingFragment StoreEntitySet="CdSponsorshipRestriction">
+                <ScalarProperty Name="Code" ColumnName="Code" />
+                <ScalarProperty Name="DescEnglish" ColumnName="DescEnglish" />
+                <ScalarProperty Name="DescSpanish" ColumnName="DescSpanish" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CdStateOrProvinces">
+            <EntityTypeMapping TypeName="FamiliasTestModel.CdStateOrProvince">
+              <MappingFragment StoreEntitySet="CdStateOrProvince">
+                <ScalarProperty Name="Code" ColumnName="Code" />
+                <ScalarProperty Name="DescEnglish" ColumnName="DescEnglish" />
+                <ScalarProperty Name="DescSpanish" ColumnName="DescSpanish" />
+                <ScalarProperty Name="Country" ColumnName="Country" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Members">
+            <EntityTypeMapping TypeName="FamiliasTestModel.Member">
+              <MappingFragment StoreEntitySet="Member">
+                <ScalarProperty Name="Project" ColumnName="Project" />
+                <ScalarProperty Name="MemberId" ColumnName="MemberId" />
+                <ScalarProperty Name="CreationDateTime" ColumnName="CreationDateTime" />
+                <ScalarProperty Name="RecordStatus" ColumnName="RecordStatus" />
+                <ScalarProperty Name="UserId" ColumnName="UserId" />
+                <ScalarProperty Name="ExpirationDateTime" ColumnName="ExpirationDateTime" />
+                <ScalarProperty Name="LastFamilyId" ColumnName="LastFamilyId" />
+                <ScalarProperty Name="FirstNames" ColumnName="FirstNames" />
+                <ScalarProperty Name="LastNames" ColumnName="LastNames" />
+                <ScalarProperty Name="PreferredName" ColumnName="PreferredName" />
+                <ScalarProperty Name="BirthDate" ColumnName="BirthDate" />
+                <ScalarProperty Name="Gender" ColumnName="Gender" />
+                <ScalarProperty Name="AffiliationType" ColumnName="AffiliationType" />
+                <ScalarProperty Name="AffiliationStatus" ColumnName="AffiliationStatus" />
+                <ScalarProperty Name="AffiliationStatusDate" ColumnName="AffiliationStatusDate" />
+                <ScalarProperty Name="LiveDead" ColumnName="LiveDead" />
+                <ScalarProperty Name="DeathDate" ColumnName="DeathDate" />
+                <ScalarProperty Name="BiologicalMotherMemberId" ColumnName="BiologicalMotherMemberId" />
+                <ScalarProperty Name="BiologicalFatherMemberId" ColumnName="BiologicalFatherMemberId" />
+                <ScalarProperty Name="OtherAffiliation" ColumnName="OtherAffiliation" />
+                <ScalarProperty Name="OfficialId" ColumnName="OfficialId" />
+                <ScalarProperty Name="HasFaithOfAgeOrOfficialId" ColumnName="HasFaithOfAgeOrOfficialId" />
+                <ScalarProperty Name="CellularPhoneNumber" ColumnName="CellularPhoneNumber" />
+                <ScalarProperty Name="Literacy" ColumnName="Literacy" />
+                <ScalarProperty Name="LastGradePassed" ColumnName="LastGradePassed" />
+                <ScalarProperty Name="HasHealthCard" ColumnName="HasHealthCard" />
+                <ScalarProperty Name="ExceptionInAgePolicy" ColumnName="ExceptionInAgePolicy" />
+                <ScalarProperty Name="LastGradePassedYear" ColumnName="LastGradePassedYear" />
+                <ScalarProperty Name="LastGradePassedStatus" ColumnName="LastGradePassedStatus" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="MiscMemberSponsorInfoes">
+            <EntityTypeMapping TypeName="FamiliasTestModel.MiscMemberSponsorInfo">
+              <MappingFragment StoreEntitySet="MiscMemberSponsorInfo">
+                <ScalarProperty Name="Project" ColumnName="Project" />
+                <ScalarProperty Name="MemberId" ColumnName="MemberId" />
+                <ScalarProperty Name="CreationDateTime" ColumnName="CreationDateTime" />
+                <ScalarProperty Name="RecordStatus" ColumnName="RecordStatus" />
+                <ScalarProperty Name="UserId" ColumnName="UserId" />
+                <ScalarProperty Name="ExpirationDateTime" ColumnName="ExpirationDateTime" />
+                <ScalarProperty Name="Photo" ColumnName="Photo" />
+                <ScalarProperty Name="PhotoDate" ColumnName="PhotoDate" />
+                <ScalarProperty Name="RetakePhotoDate" ColumnName="RetakePhotoDate" />
+                <ScalarProperty Name="RetakePhotoUserId" ColumnName="RetakePhotoUserId" />
+                <ScalarProperty Name="LastCarnetPrintDate" ColumnName="LastCarnetPrintDate" />
+                <ScalarProperty Name="SponsorshipLevel" ColumnName="SponsorshipLevel" />
+                <ScalarProperty Name="SponsorshipType" ColumnName="SponsorshipType" />
+                <ScalarProperty Name="Restriction" ColumnName="Restriction" />
+                <ScalarProperty Name="RestrictionDate" ColumnName="RestrictionDate" />
+                <ScalarProperty Name="ExceptionPhotoDate" ColumnName="ExceptionPhotoDate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Sponsors">
+            <EntityTypeMapping TypeName="FamiliasTestModel.Sponsor">
+              <MappingFragment StoreEntitySet="Sponsor">
+                <ScalarProperty Name="SponsorId" ColumnName="SponsorId" />
+                <ScalarProperty Name="CreationDateTime" ColumnName="CreationDateTime" />
+                <ScalarProperty Name="RecordStatus" ColumnName="RecordStatus" />
+                <ScalarProperty Name="UserId" ColumnName="UserId" />
+                <ScalarProperty Name="ExpirationDateTime" ColumnName="ExpirationDateTime" />
+                <ScalarProperty Name="SponsorNames" ColumnName="SponsorNames" />
+                <ScalarProperty Name="Gender" ColumnName="Gender" />
+                <ScalarProperty Name="OrganizationContactNames" ColumnName="OrganizationContactNames" />
+                <ScalarProperty Name="StateOrProvince" ColumnName="StateOrProvince" />
+                <ScalarProperty Name="Country" ColumnName="Country" />
+                <ScalarProperty Name="SpeaksSpanish" ColumnName="SpeaksSpanish" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SponsorMemberRelations">
+            <EntityTypeMapping TypeName="FamiliasTestModel.SponsorMemberRelation">
+              <MappingFragment StoreEntitySet="SponsorMemberRelation">
+                <ScalarProperty Name="Project" ColumnName="Project" />
+                <ScalarProperty Name="SponsorId" ColumnName="SponsorId" />
+                <ScalarProperty Name="MemberId" ColumnName="MemberId" />
+                <ScalarProperty Name="CreationDateTime" ColumnName="CreationDateTime" />
+                <ScalarProperty Name="RecordStatus" ColumnName="RecordStatus" />
+                <ScalarProperty Name="UserId" ColumnName="UserId" />
+                <ScalarProperty Name="ExpirationDateTime" ColumnName="ExpirationDateTime" />
+                <ScalarProperty Name="Type" ColumnName="Type" />
+                <ScalarProperty Name="Notes" ColumnName="Notes" />
+                <ScalarProperty Name="InactiveReason" ColumnName="InactiveReason" />
+                <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+                <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="v_AMBF_CondicionesVivienda">
+            <EntityTypeMapping TypeName="FamiliasTestModel.v_AMBF_CondicionesVivienda">
+              <MappingFragment StoreEntitySet="v_AMBF_CondicionesVivienda">
+                <ScalarProperty Name="Sitio" ColumnName="Sitio" />
+                <ScalarProperty Name="Familia" ColumnName="Familia" />
+                <ScalarProperty Name="Clasificación" ColumnName="Clasificación" />
+                <ScalarProperty Name="TS" ColumnName="TS" />
+                <ScalarProperty Name="Pueblo" ColumnName="Pueblo" />
+                <ScalarProperty Name="Tenencia" ColumnName="Tenencia" />
+                <ScalarProperty Name="Tamaño" ColumnName="Tamaño" />
+                <ScalarProperty Name="Cuartos" ColumnName="Cuartos" />
+                <ScalarProperty Name="Paredes" ColumnName="Paredes" />
+                <ScalarProperty Name="Paredes_Calidad" ColumnName="Paredes_Calidad" />
+                <ScalarProperty Name="Paredes_Notas" ColumnName="Paredes_Notas" />
+                <ScalarProperty Name="Techo" ColumnName="Techo" />
+                <ScalarProperty Name="Techo_Calidad" ColumnName="Techo_Calidad" />
+                <ScalarProperty Name="Techo_Notas" ColumnName="Techo_Notas" />
+                <ScalarProperty Name="Piso" ColumnName="Piso" />
+                <ScalarProperty Name="Piso_Calidad" ColumnName="Piso_Calidad" />
+                <ScalarProperty Name="Piso_Notas" ColumnName="Piso_Notas" />
+                <ScalarProperty Name="Cocina" ColumnName="Cocina" />
+                <ScalarProperty Name="Cocina_Calidad" ColumnName="Cocina_Calidad" />
+                <ScalarProperty Name="Cocina_Notas" ColumnName="Cocina_Notas" />
+                <ScalarProperty Name="Agua" ColumnName="Agua" />
+                <ScalarProperty Name="Electricidad" ColumnName="Electricidad" />
+                <ScalarProperty Name="Baño" ColumnName="Baño" />
+                <ScalarProperty Name="Drenaje" ColumnName="Drenaje" />
+                <ScalarProperty Name="Higiene" ColumnName="Higiene" />
+                <ScalarProperty Name="CocinaTecho" ColumnName="CocinaTecho" />
+                <ScalarProperty Name="CocinaTecho_Calidad" ColumnName="CocinaTecho_Calidad" />
+                <ScalarProperty Name="CocinaTecho_Notas" ColumnName="CocinaTecho_Notas" />
+                <ScalarProperty Name="pCultivar" ColumnName="pCultivar" />
+                <ScalarProperty Name="Estufa" ColumnName="Estufa" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="v_GEN_Apadrinados">
+            <EntityTypeMapping TypeName="FamiliasTestModel.v_GEN_Apadrinados">
+              <MappingFragment StoreEntitySet="v_GEN_Apadrinados">
+                <ScalarProperty Name="Project" ColumnName="Project" />
+                <ScalarProperty Name="Sitio" ColumnName="Sitio" />
+                <ScalarProperty Name="TipoAfil" ColumnName="TipoAfil" />
+                <ScalarProperty Name="No_Afiliación" ColumnName="No_Afiliación" />
+                <ScalarProperty Name="Apellidos" ColumnName="Apellidos" />
+                <ScalarProperty Name="Nombres" ColumnName="Nombres" />
+                <ScalarProperty Name="Genero" ColumnName="Genero" />
+                <ScalarProperty Name="Nacimiento" ColumnName="Nacimiento" />
+                <ScalarProperty Name="Edad" ColumnName="Edad" />
+                <ScalarProperty Name="Año" ColumnName="Año" />
+                <ScalarProperty Name="Grado" ColumnName="Grado" />
+                <ScalarProperty Name="Estado_Educ" ColumnName="Estado_Educ" />
+                <ScalarProperty Name="Fecha_Estado" ColumnName="Fecha_Estado" />
+                <ScalarProperty Name="ExcepcionEstadoEduc" ColumnName="ExcepcionEstadoEduc" />
+                <ScalarProperty Name="Sección" ColumnName="Sección" />
+                <ScalarProperty Name="Maestro" ColumnName="Maestro" />
+                <ScalarProperty Name="Nivel_Educ" ColumnName="Nivel_Educ" />
+                <ScalarProperty Name="Escuela" ColumnName="Escuela" />
+                <ScalarProperty Name="Semaforo" ColumnName="Semaforo" />
+                <ScalarProperty Name="Fase" ColumnName="Fase" />
+                <ScalarProperty Name="Razón" ColumnName="Razón" />
+                <ScalarProperty Name="FechaEstadoFase" ColumnName="FechaEstadoFase" />
+                <ScalarProperty Name="Padrinos" ColumnName="Padrinos" />
+                <ScalarProperty Name="NivelApadrinamiento" ColumnName="NivelApadrinamiento" />
+                <ScalarProperty Name="Familia" ColumnName="Familia" />
+                <ScalarProperty Name="TS" ColumnName="TS" />
+                <ScalarProperty Name="Región" ColumnName="Región" />
+                <ScalarProperty Name="Madre" ColumnName="Madre" />
+                <ScalarProperty Name="Padre" ColumnName="Padre" />
+                <ScalarProperty Name="Dirección" ColumnName="Dirección" />
+                <ScalarProperty Name="Pueblo" ColumnName="Pueblo" />
+                <ScalarProperty Name="Area" ColumnName="Area" />
+                <ScalarProperty Name="Telefonos" ColumnName="Telefonos" />
+                <ScalarProperty Name="Clasificación" ColumnName="Clasificación" />
+                <ScalarProperty Name="ProximaClasificacion" ColumnName="ProximaClasificacion" />
+                <ScalarProperty Name="Carrera" ColumnName="Carrera" />
+                <ScalarProperty Name="FechaAfiliacion" ColumnName="FechaAfiliacion" />
+                <ScalarProperty Name="Restricción" ColumnName="Restricción" />
+                <ScalarProperty Name="PuebloEscuela" ColumnName="PuebloEscuela" />
+                <ScalarProperty Name="Ingresos" ColumnName="Ingresos" />
+                <ScalarProperty Name="SchoolType" ColumnName="SchoolType" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="v_GEN_FamiliasAfiliadas">
+            <EntityTypeMapping TypeName="FamiliasTestModel.v_GEN_FamiliasAfiliadas">
+              <MappingFragment StoreEntitySet="v_GEN_FamiliasAfiliadas">
+                <ScalarProperty Name="Sitio" ColumnName="Sitio" />
+                <ScalarProperty Name="Familia" ColumnName="Familia" />
+                <ScalarProperty Name="Dirección" ColumnName="Dirección" />
+                <ScalarProperty Name="Area" ColumnName="Area" />
+                <ScalarProperty Name="Pueblo" ColumnName="Pueblo" />
+                <ScalarProperty Name="Región" ColumnName="Región" />
+                <ScalarProperty Name="Madre" ColumnName="Madre" />
+                <ScalarProperty Name="Padre" ColumnName="Padre" />
+                <ScalarProperty Name="TS" ColumnName="TS" />
+                <ScalarProperty Name="UltimaActualización" ColumnName="UltimaActualización" />
+                <ScalarProperty Name="Clasificacion" ColumnName="Clasificacion" />
+                <ScalarProperty Name="FechaClasificación" ColumnName="FechaClasificación" />
+                <ScalarProperty Name="Apadrinados" ColumnName="Apadrinados" />
+                <ScalarProperty Name="Afiliados" ColumnName="Afiliados" />
+                <ScalarProperty Name="DesafiliadosGraduados" ColumnName="DesafiliadosGraduados" />
+                <ScalarProperty Name="FechaAfiliación" ColumnName="FechaAfiliación" />
+                <ScalarProperty Name="Telefonos" ColumnName="Telefonos" />
+                <ScalarProperty Name="Ingresos" ColumnName="Ingresos" />
+                <ScalarProperty Name="IngresosJefes" ColumnName="IngresosJefes" />
+                <ScalarProperty Name="Family" ColumnName="Family" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="v_GEN_PoblaciónConDerechos">
+            <EntityTypeMapping TypeName="FamiliasTestModel.v_GEN_PoblaciónConDerechos">
+              <MappingFragment StoreEntitySet="v_GEN_PoblaciónConDerechos">
+                <ScalarProperty Name="Sitio" ColumnName="Sitio" />
+                <ScalarProperty Name="Miembro" ColumnName="Miembro" />
+                <ScalarProperty Name="Apellidos" ColumnName="Apellidos" />
+                <ScalarProperty Name="Nombres" ColumnName="Nombres" />
+                <ScalarProperty Name="Genero" ColumnName="Genero" />
+                <ScalarProperty Name="Nacimiento" ColumnName="Nacimiento" />
+                <ScalarProperty Name="Edad" ColumnName="Edad" />
+                <ScalarProperty Name="RelaciónFamiliar" ColumnName="RelaciónFamiliar" />
+                <ScalarProperty Name="Familia" ColumnName="Familia" />
+                <ScalarProperty Name="Clasificación" ColumnName="Clasificación" />
+                <ScalarProperty Name="FechaClasificación" ColumnName="FechaClasificación" />
+                <ScalarProperty Name="EstadoFamiliar" ColumnName="EstadoFamiliar" />
+                <ScalarProperty Name="Etnia" ColumnName="Etnia" />
+                <ScalarProperty Name="Pueblo" ColumnName="Pueblo" />
+                <ScalarProperty Name="TS" ColumnName="TS" />
+                <ScalarProperty Name="Región" ColumnName="Región" />
+                <ScalarProperty Name="Teléfono" ColumnName="Teléfono" />
+                <ScalarProperty Name="descSitio" ColumnName="descSitio" />
+                <ScalarProperty Name="TipoMiembro" ColumnName="TipoMiembro" />
+                <ScalarProperty Name="GradoAcadémico" ColumnName="GradoAcadémico" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="v_GEN_PoblacionPorSitio">
+            <EntityTypeMapping TypeName="FamiliasTestModel.v_GEN_PoblacionPorSitio">
+              <MappingFragment StoreEntitySet="v_GEN_PoblacionPorSitio">
+                <ScalarProperty Name="Sitio" ColumnName="Sitio" />
+                <ScalarProperty Name="Total" ColumnName="Total" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

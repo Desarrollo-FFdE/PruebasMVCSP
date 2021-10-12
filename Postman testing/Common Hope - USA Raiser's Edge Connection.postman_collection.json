@@ -1,0 +1,295 @@
+{
+	"info": {
+		"_postman_id": "0f8611db-7f2f-4216-9de2-d0ba30f19ff7",
+		"name": "Common Hope - USA Raiser's Edge Connection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "AS",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://svrapp/RE/familias/sponsorship/FamiliasRaisersEdgeInterfaceTrans?FunctionCode=AS&SponsorId=1110381&SponsorNames=Laura%20Speltz&Gender=F&Country=US&StateOrProvince=MN&SpeaksSpanish=false",
+					"protocol": "http",
+					"host": [
+						"svrapp"
+					],
+					"path": [
+						"RE",
+						"familias",
+						"sponsorship",
+						"FamiliasRaisersEdgeInterfaceTrans"
+					],
+					"query": [
+						{
+							"key": "FunctionCode",
+							"value": "AS"
+						},
+						{
+							"key": "SponsorId",
+							"value": "1110381"
+						},
+						{
+							"key": "SponsorNames",
+							"value": "Laura%20Speltz"
+						},
+						{
+							"key": "Gender",
+							"value": "F"
+						},
+						{
+							"key": "Country",
+							"value": "US"
+						},
+						{
+							"key": "StateOrProvince",
+							"value": "MN"
+						},
+						{
+							"key": "SpeaksSpanish",
+							"value": "false"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ASP",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://svrapp/RE/familias/sponsorship/FamiliasRaisersEdgeInterfaceTrans?FunctionCode=ASP&Project=R&SponsorId=1066667&MemberId=1364&Notes=T9&SponsorshipType=GUID&Date=08-31-2021",
+					"protocol": "http",
+					"host": [
+						"svrapp"
+					],
+					"path": [
+						"RE",
+						"familias",
+						"sponsorship",
+						"FamiliasRaisersEdgeInterfaceTrans"
+					],
+					"query": [
+						{
+							"key": "FunctionCode",
+							"value": "ASP"
+						},
+						{
+							"key": "Project",
+							"value": "R"
+						},
+						{
+							"key": "SponsorId",
+							"value": "1066667"
+						},
+						{
+							"key": "MemberId",
+							"value": "1364"
+						},
+						{
+							"key": "Notes",
+							"value": "T9"
+						},
+						{
+							"key": "SponsorshipType",
+							"value": "GUID"
+						},
+						{
+							"key": "Date",
+							"value": "08-31-2021"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "RS",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://svrapp/RE/familias/sponsorship/FamiliasRaisersEdgeInterfaceTrans?InactiveReason=FINA&FunctionCode=RS&Project=M&SponsorId=1062177&MemberId=8&SponsorshipType=GUID&Notes=Test22&Date=31/08/2021",
+					"protocol": "http",
+					"host": [
+						"svrapp"
+					],
+					"path": [
+						"RE",
+						"familias",
+						"sponsorship",
+						"FamiliasRaisersEdgeInterfaceTrans"
+					],
+					"query": [
+						{
+							"key": "InactiveReason",
+							"value": "FINA"
+						},
+						{
+							"key": "FunctionCode",
+							"value": "RS"
+						},
+						{
+							"key": "Project",
+							"value": "M"
+						},
+						{
+							"key": "SponsorId",
+							"value": "1062177"
+						},
+						{
+							"key": "MemberId",
+							"value": "8"
+						},
+						{
+							"key": "SponsorshipType",
+							"value": "GUID"
+						},
+						{
+							"key": "Notes",
+							"value": "Test22"
+						},
+						{
+							"key": "Date",
+							"value": "31/08/2021"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "STC",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://svrapp/RE/familias/sponsorship/FamiliasRaisersEdgeInterfaceTrans?FunctionCode=STC&Project=M&SponsorId=1105306&MemberId=101&SponsorshipType=LEAD&Notes=Test20",
+					"protocol": "http",
+					"host": [
+						"svrapp"
+					],
+					"path": [
+						"RE",
+						"familias",
+						"sponsorship",
+						"FamiliasRaisersEdgeInterfaceTrans"
+					],
+					"query": [
+						{
+							"key": "FunctionCode",
+							"value": "STC"
+						},
+						{
+							"key": "Project",
+							"value": "M"
+						},
+						{
+							"key": "SponsorId",
+							"value": "1105306"
+						},
+						{
+							"key": "MemberId",
+							"value": "101"
+						},
+						{
+							"key": "SponsorshipType",
+							"value": "LEAD"
+						},
+						{
+							"key": "Notes",
+							"value": "Test20"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SDC",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://svrapp/RE/familias/sponsorship/FamiliasRaisersEdgeInterfaceTrans?FunctionCode=SDC&SponsorId=1115141&SponsorNames=Pedro%20Martinez&OrganizationContactNames=XY&Gender=M&Country=US&StateOrProvince=MN&SpeaksSpanish=true",
+					"protocol": "http",
+					"host": [
+						"svrapp"
+					],
+					"path": [
+						"RE",
+						"familias",
+						"sponsorship",
+						"FamiliasRaisersEdgeInterfaceTrans"
+					],
+					"query": [
+						{
+							"key": "FunctionCode",
+							"value": "SDC"
+						},
+						{
+							"key": "SponsorId",
+							"value": "1115141"
+						},
+						{
+							"key": "SponsorNames",
+							"value": "Pedro%20Martinez"
+						},
+						{
+							"key": "OrganizationContactNames",
+							"value": "XY"
+						},
+						{
+							"key": "Gender",
+							"value": "M"
+						},
+						{
+							"key": "Country",
+							"value": "US"
+						},
+						{
+							"key": "StateOrProvince",
+							"value": "MN"
+						},
+						{
+							"key": "SpeaksSpanish",
+							"value": "true"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EADI",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://svrapp/RE/familias/sponsorship/FamiliasRaisersEdgeInterfaceTrans?FunctionCode=EADI",
+					"protocol": "http",
+					"host": [
+						"svrapp"
+					],
+					"path": [
+						"RE",
+						"familias",
+						"sponsorship",
+						"FamiliasRaisersEdgeInterfaceTrans"
+					],
+					"query": [
+						{
+							"key": "FunctionCode",
+							"value": "EADI"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

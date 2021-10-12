@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="d8f39d773e86457d81a34188b93d89d7" Name="Diagram1">
+        <EntityTypeShape EntityType="FamiliasTestModel.CdCountry" Width="1.5" PointX="3.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FamiliasTestModel.CdGender" Width="1.5" PointX="0.75" PointY="6" IsExpanded="true" />
+        <EntityTypeShape EntityType="FamiliasTestModel.CdSponsorMemberRelationInactiveReason" Width="1.5" PointX="11.75" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="FamiliasTestModel.CdSponsorMemberRelationType" Width="1.5" PointX="8.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FamiliasTestModel.CdSponsorshipLevel" Width="1.5" PointX="8.75" PointY="1.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="FamiliasTestModel.CdSponsorshipRestriction" Width="1.5" PointX="8.75" PointY="8.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="FamiliasTestModel.CdStateOrProvince" Width="1.5" PointX="3.75" PointY="11.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="FamiliasTestModel.Member" Width="1.5" PointX="3" PointY="3.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="FamiliasTestModel.MiscMemberSponsorInfo" Width="1.5" PointX="11" PointY="3.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="FamiliasTestModel.Sponsor" Width="1.5" PointX="6" PointY="5.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="FamiliasTestModel.SponsorMemberRelation" Width="1.5" PointX="14" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="FamiliasTestModel.v_AMBF_CondicionesVivienda" Width="1.5" PointX="5.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FamiliasTestModel.v_GEN_Apadrinados" Width="1.5" PointX="10.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FamiliasTestModel.v_GEN_FamiliasAfiliadas" Width="1.5" PointX="0.75" PointY="11.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FamiliasTestModel.v_GEN_PoblaciónConDerechos" Width="1.5" PointX="7.75" PointY="11.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FamiliasTestModel.v_GEN_PoblacionPorSitio" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <AssociationConnector Association="FamiliasTestModel.FK_Sponsor_CdCountry" ManuallyRouted="false" />
+        <AssociationConnector Association="FamiliasTestModel.FK_Member_CdGender" ManuallyRouted="false" />
+        <AssociationConnector Association="FamiliasTestModel.FK_Sponsor_CdGender" ManuallyRouted="false" />
+        <AssociationConnector Association="FamiliasTestModel.FK_SponsorMemberRelation_CdSponsorMemberRelationInactiveReason" ManuallyRouted="false" />
+        <AssociationConnector Association="FamiliasTestModel.FK_MiscMemberSponsorInfo_CdSponsorMemberRelationType" ManuallyRouted="false" />
+        <AssociationConnector Association="FamiliasTestModel.FK_SponsorMemberRelation_CdSponsorMemberRelationType" ManuallyRouted="false" />
+        <AssociationConnector Association="FamiliasTestModel.FK_MiscMemberSponsorInfo_CdSponsorshipLevel" ManuallyRouted="false" />
+        <AssociationConnector Association="FamiliasTestModel.FK_MiscMemberSponsorInfo_CdSponsorshipRestriction" ManuallyRouted="false" />
+        <AssociationConnector Association="FamiliasTestModel.FK_Sponsor_CdStateOrProvince" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
